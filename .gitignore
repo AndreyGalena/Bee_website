@@ -1,0 +1,6 @@
+node_modules 
+Gulp_start.txt
+dist/
+package-lock.json
+# /app/video
+# /app/img
