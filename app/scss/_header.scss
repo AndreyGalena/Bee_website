@@ -1,13 +1,47 @@
 // Когда < 900px
 .header {
-    font-size: 20px; // !!!!!!!!!!!!!!!!!!
     &__one-block {
         display: flex;
         justify-content: space-between;
         align-items: center;
         // padding-top: clamp(30px, 7em, 50px);
+        background-color: aquamarine;
         .icon-block {
-            // flex-grow: 1; // занимаемое пространство.
+            // background-color: azure;
+            .icon-block__icon-a {
+                display: inline-block;
+                padding: 10px;
+                .icon-block__icon {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    img {
+                        filter: drop-shadow(-4px -3px 4px rgb(134, 121, 36));
+                    }
+                    .icon-block__line {
+                        width: 2px;
+                        height: 60px;
+                        margin: 2px 5px;
+                        background-color: rgb(123, 122, 122);
+                    }
+                    .icon-block__title {
+                        h1 {
+                            font-size: 25px;
+                            text-transform: uppercase;
+                            font-style: italic;
+                            font-weight: 500;
+                            color: #77802e;
+                        }
+                        h2 {
+                            font-size: 25px;
+                            text-transform: uppercase;
+                            font-style: italic;
+                            font-weight: 600;
+                            color: #b7ab08;
+                        }
+                    }
+                }
+            }
         }
         .menu-btn {
             display: none;
@@ -16,17 +50,17 @@
             // flex-grow: 2;
             .menu {
                 display: flex;
-                .item {
+                &__item {
                     list-style-type: none;
                     font-size: 20px;
                     font-weight: 600;
                     padding: 0 23px;
                     a {
-                        color: rgb(12, 12, 12);
+                        color: #77802e;
                         transition-duration: 0.3s;
                     }
                     a:hover {
-                        color: rgb(220, 11, 11);
+                        color: rgb(86, 88, 29);
                     }
                 }
             }

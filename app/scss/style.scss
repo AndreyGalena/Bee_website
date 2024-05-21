@@ -13,22 +13,24 @@
 
 body {
     font-family: Raleway;
+    min-height: 100vh;
+    // background-image: url("../img/Bürmoos_drohne.jpg");
 }
 
-.section {
-    max-width: 1600px;
+.section, 
+.footer {
+    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
-    // margin: 0 auto;
-    // padding-left: 10px;
-    // padding-right: 10px;
+    width: 100%;
 }
 
 .wrapper-container {
     max-width: var(--wrapper-width, 1440px);
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
-.services{
-    max-width: 800px;
-}
+// .services{
+//     max-width: 800px;
+// }

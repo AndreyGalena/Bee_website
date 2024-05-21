@@ -1,0 +1,125 @@
+/* Слайдер: */
+
+.main-one {
+    display: flex;
+
+    &__nav-menu {
+        flex: 1 1 20%;
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-style: italic;
+            background-color: #f8f5f2;
+            padding: 10px;
+
+            ul {
+                padding: 25px 5px;
+
+                li {
+                    a {
+                        color: #77802e;
+                    }
+                }
+
+                li:not(:last-child) {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    &__content-block {
+        flex: 1 1 80%;
+
+        .slider {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            max-height: 300px;
+            margin: auto;
+
+            .item-block {
+                position: relative;
+                width: 100%;
+                max-height: 300px;
+                // Анимация исчезновения img.
+                animation-name: fade;
+                animation-duration: 15s;
+                animation-timing-function: linear;
+
+                img {
+                    /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
+                    object-fit: cover;
+                    width: 100%;
+                    max-height: 300px;
+                }
+            }
+
+            .previous,
+            .next {
+                /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+                cursor: pointer;
+                /* Положение элемента задаётся относительно границ браузера: */
+                position: absolute;
+                top: 50%;
+                // width: auto;
+                // margin-top: -22px;
+                padding: 16px;
+                /* Оформление самих кнопок: */
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                /* Плавное появление фона при наведении курсора: */
+                transition: 0.6s ease;
+                /* Скругление границ: */
+                border-radius: 0 3px 3px 0;
+            }
+
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            .previous:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        .content {
+            width: 100%;
+            height: 100vh;
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+            background-color: burlywood;
+        }
+    }
+}
+
+@keyframes fade {
+
+    /* Устанавливаем и изменяем степень прозрачности: */
+    0% {
+        opacity: 0.2
+    }
+
+    25% {
+        opacity: 1
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
