@@ -46,8 +46,7 @@
         .menu-btn {
             display: none;
         }
-        .menu-block {// может быть лишним
-            // flex-grow: 2;
+        .menu-block {
             .menu {
                 display: flex;
                 &__item {

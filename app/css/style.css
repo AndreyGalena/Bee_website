@@ -218,9 +218,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Слайдер: */
 .main-one {
   display: flex;
+  flex-wrap: wrap;
 }
 .main-one__nav-menu {
-  flex: 1 1 20%;
+  flex: 1 0 20%;
+  min-width: 300px;
 }
 .main-one__nav-menu .menu {
   display: flex;
@@ -240,11 +242,14 @@ h1, h2, h3, h4, h5, h6 {
 .main-one__nav-menu .menu ul li a {
   color: #77802e;
 }
+.main-one__nav-menu .menu ul li a .icon-menu {
+  width: 20px;
+}
 .main-one__nav-menu .menu ul li:not(:last-child) {
   padding-bottom: 20px;
 }
 .main-one__content-block {
-  flex: 1 1 80%;
+  flex: 1 1 70%;
 }
 .main-one__content-block .slider {
   position: relative;
@@ -315,6 +320,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   100% {
     opacity: 0.2;
+  }
+}
+@media (max-width: 1000px) {
+  .main-one__nav-menu .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-one__nav-menu .menu ul li {
+    padding: 0 10px;
   }
 }
 .main-two {
