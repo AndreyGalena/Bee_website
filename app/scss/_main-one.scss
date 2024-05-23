@@ -7,6 +7,7 @@
     &__nav-menu {
         flex: 1 0 20%;
         min-width: 300px;
+        margin-right: 2px;
 
         .menu {
             display: flex;
@@ -17,15 +18,16 @@
             font-weight: 500;
             text-transform: uppercase;
             font-style: italic;
-            background-color: #f8f5f2;
+            background-color: #d7d0c9;
             padding: 10px;
+            // background: url(../img/bg/honeycomb-1920.webp);
 
             ul {
                 padding: 25px 5px;
 
                 li {
                     a {
-                        color: #77802e;
+                        color: #3b3c34;
                         .icon-menu {
                             width: 20px;
                         }
@@ -47,8 +49,7 @@
             left: 0;
             width: 100%;
             max-height: 300px;
-            margin: auto;
-            // min-width: 600px;
+            margin: 2px 0 2px 0;
 
             .item-block {
                 position: relative;
@@ -105,15 +106,18 @@
             font-weight: 600;
             text-align: center;
             padding: 20px 10px;
-            background-color: #87dea3;
+
+            background: url(../img/bg/honeycomb-1920.webp);
+            background-color: rgba(218, 218, 97, 0.549);
+            background-blend-mode: screen;
             
             .article-block {
                 margin-top: 30px;
-                background-color: rgb(126, 126, 123);
+                background-color: rgb(165, 165, 159);
                 .category-date-block {
                     display: flex;
                     justify-content: space-between;
-                    font-size: 15px;
+                    font-size: 20px;
                     font-weight: 500;
                     padding: 5px 20px;
                     background-color: #f8f5f2;
@@ -130,18 +134,19 @@
                 .content-block {
                     display: flex;
                     img {
-                        width: 200px;
+                        max-width: 300px;
+                        margin: 10px;
                     }
                     .text-block {
                         flex: 1 1 80%;
                         .title {
-                            font-size: 25px;
-                            color: #dac84f;
+                            font-size: 35px;
+                            color: #4f4e44;
                             padding: 5px 10px 10px 20px;
                         }
                         .text {
-                            font-size: 15px;
-                            line-height: 20px;
+                            font-size: 23px;
+                            line-height: 35px;
                             text-align: start;
                             padding-left: 20px;
                         }
