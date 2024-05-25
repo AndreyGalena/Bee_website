@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     overflow: auto;
     padding-top: 70px;
-    z-index: 10;
+    z-index: 100;
     background: linear-gradient(to bottom right, rgba(28, 234, 190, 0.8), rgba(47, 150, 209, 0.8) 110%);
     transition: all 1s ease 0s;
     display: flex;
@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
     background-color: #5a8b87;
     border-radius: 50%;
-    z-index: 20;
+    z-index: 110;
     margin: 10px 0px 0px 0px;
   }
   .menu-btn span {
@@ -172,7 +172,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
 }
-.header__one-block .icon-block .icon-block__icon-a .icon-block__icon img {
+.header__one-block .icon-block .icon-block__icon-a .icon-block__icon .header-icon {
+  max-width: 64px;
   filter: drop-shadow(-4px -3px 4px rgb(134, 121, 36));
 }
 .header__one-block .icon-block .icon-block__icon-a .icon-block__icon .icon-block__line {
@@ -215,15 +216,16 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(86, 88, 29);
 }
 
-/* Слайдер: */
 .main {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .main__nav-menu {
   flex: 1 0 20%;
   min-width: 300px;
-  margin-right: 2px;
+  margin: 2px 2px 2px 0;
+  display: flex;
 }
 .main__nav-menu .menu {
   display: flex;
@@ -249,6 +251,15 @@ h1, h2, h3, h4, h5, h6 {
 .main__nav-menu .menu ul li:not(:last-child) {
   padding-bottom: 20px;
 }
+.main__nav-menu .button-block {
+  background-color: #898683;
+}
+.main__nav-menu .button-block .button-nav-menu {
+  width: 25px;
+  font-size: 25px;
+  color: red;
+  margin-top: 20vh;
+}
 .main__content-block {
   flex: 1 1 70%;
 }
@@ -256,9 +267,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
   max-height: 300px;
-  margin: 2px 0 2px 0;
+  margin: 2px 0px 2px 0;
 }
 .main__content-block .slider .item-block {
   position: relative;
@@ -276,19 +286,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__content-block .slider .previous,
 .main__content-block .slider .next {
-  /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
   cursor: pointer;
-  /* Положение элемента задаётся относительно границ браузера: */
   position: absolute;
   top: 50%;
   padding: 16px;
-  /* Оформление самих кнопок: */
-  color: white;
+  color: rgb(214, 209, 209);
   font-weight: bold;
-  font-size: 20px;
-  /* Плавное появление фона при наведении курсора: */
+  font-size: 25px;
   transition: 0.6s ease;
-  /* Скругление границ: */
   border-radius: 0 3px 3px 0;
 }
 .main__content-block .slider .next {
@@ -297,6 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__content-block .slider .previous:hover,
 .main__content-block .slider .next:hover {
+  color: rgb(224, 9, 9);
   background-color: rgba(0, 0, 0, 0.2);
 }
 .main__content-block .contents {
@@ -306,6 +312,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   text-align: center;
   padding: 20px 10px;
+  margin-bottom: 2px;
   background: url(../img/bg/honeycomb-1920.webp);
   background-color: rgba(218, 218, 97, 0.549);
   background-blend-mode: screen;
@@ -317,6 +324,7 @@ h1, h2, h3, h4, h5, h6 {
 .main__content-block .contents .article-block .category-date-block {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   font-size: 20px;
   font-weight: 500;
   padding: 5px 20px;
@@ -324,13 +332,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__content-block .contents .article-block .content-block {
   display: flex;
+  flex-wrap: wrap;
 }
-.main__content-block .contents .article-block .content-block img {
+.main__content-block .contents .article-block .content-block .img-block {
+  flex: 1 1 40%;
+}
+.main__content-block .contents .article-block .content-block .img-block img {
   max-width: 300px;
   margin: 10px;
 }
 .main__content-block .contents .article-block .content-block .text-block {
-  flex: 1 1 80%;
+  flex: 1 1 60%;
 }
 .main__content-block .contents .article-block .content-block .text-block .title {
   font-size: 35px;
@@ -376,6 +388,31 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 10px;
   }
 }
+.main__nav-menu .button-block {
+  display: none;
+}
+
+@media (max-width: 1010px) {
+  .main__content-block .slider {
+    margin-left: 29px;
+  }
+  .main__nav-menu {
+    transform: translateX(-91%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: transform 2s ease;
+  }
+  .main__nav-menu .button-block {
+    display: block;
+    border-bottom-right-radius: 30px;
+  }
+}
+.active-nav-menu {
+  transform: translateX(0px);
+}
+
 .footer .wrapper-container {
   width: 100%;
   min-height: 50px;
@@ -398,8 +435,8 @@ body {
 }
 
 .wrapper-container {
-  max-width: var(--wrapper-width, 1600px);
+  width: 100%;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
 }

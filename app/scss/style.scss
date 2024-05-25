@@ -2,12 +2,12 @@
         '_burger_menu',
         '_header',
         '_main-one',
+        '_nav-menu_active',
         '_footer';
 
 body {
     font-family: Raleway;
     min-height: 100vh;
-    // background-image: url("../img/Bürmoos_drohne.jpg");
 }
 
 .section, 
@@ -19,11 +19,8 @@ body {
 }
 
 .wrapper-container {
-    max-width: var(--wrapper-width, 1600px);
+    width: 100%;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
 }
-// .services{
-//     max-width: 800px;
-// }

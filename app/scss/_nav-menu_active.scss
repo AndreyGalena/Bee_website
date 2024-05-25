@@ -1,0 +1,25 @@
+.main__nav-menu .button-block {
+    display: none;
+}
+
+@media (max-width: 1010px) { 
+    .main__content-block .slider {
+        margin-left: 29px;
+    }
+    .main__nav-menu {
+        transform: translateX(-91%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        transition: transform 2s ease;
+        .button-block {
+            display: block;
+            border-bottom-right-radius: 30px;
+        }
+    }
+}
+
+.active-nav-menu {
+    transform: translateX(0px);
+}

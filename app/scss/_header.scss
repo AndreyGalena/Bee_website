@@ -4,10 +4,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // padding-top: clamp(30px, 7em, 50px);
         background-color: aquamarine;
         .icon-block {
-            // background-color: azure;
             .icon-block__icon-a {
                 display: inline-block;
                 padding: 10px;
@@ -15,7 +13,8 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    img {
+                    .header-icon {
+                        max-width: 64px;
                         filter: drop-shadow(-4px -3px 4px rgb(134, 121, 36));
                     }
                     .icon-block__line {

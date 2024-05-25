@@ -2,16 +2,31 @@
 
 // Создаёт список элементов
 let cards = document.querySelectorAll('.comment');
-//--------------------------------------------------------------------------------
-// Функция
-function nameClass() {
+// nav-menu
+let navMenu = document.querySelector('.main__nav-menu');
+// Кнопка nav-menu
+let button_navMenu = document.querySelector('.button-nav-menu');
 
+//--------------------------------------------------------------------------------
+// Функция добовляет/убирает класс.
+function reassignClass() {
+    navMenu.classList.toggle("active-nav-menu");
 }
-// Стрелочная функция
-let addClass = () => {
-    // добавляет класс n элементу в списке.
-    cards[n].classList.add("active");
+
+// Меняет стрелку на кнопке.
+function reassignButton() {
+    if (button_navMenu.innerText == '❯') {
+        button_navMenu.innerText = '❮';
+    } else {
+        button_navMenu.innerText = '❯'
+    };
 }
+
+// // Стрелочная функция
+// let addClass = () => {
+//     // добавляет класс n элементу в списке.
+//     button_navMenu.classList.add("active");
+// }
 let removeClasses = () => {
     // Удаляет все классы active в списке. 
     for (let elem of cards) {
@@ -39,11 +54,16 @@ document.body.addEventListener("click", function(e) {
         directСlick.classList.contains("span")) {
         addActiveMenu();
     }
+
     // Последующие действия.
-    if (directСlick.classList.contains("left")) {
-        nameClass();
-    } else if (directСlick.classList.contains("right")) {
-        removeClasses();
-        addClass();
-    }
+    if (directСlick.classList.contains("button-nav-menu")) {
+        reassignClass();
+        // console.log(`тут должно быть value ${ button_navMenu.innerText }`);
+        reassignButton();
+
+    } 
+    // else if (directСlick.classList.contains("right")) {
+    //     removeClasses();
+    //     addClass();
+    // }
 })

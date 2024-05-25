@@ -14,7 +14,7 @@
             height: 100%;
             overflow: auto; // для скрола меню
             padding-top: 70px;
-            z-index: 10;
+            z-index: 100;
             background: linear-gradient(to bottom right, rgba(28, 234, 190, 0.8), rgba(47, 150, 209, 0.8) 110%);
             transition: all 1s ease 0s;
             display: flex;
@@ -57,7 +57,7 @@
         height: 50px;
         background-color: #5a8b87;
         border-radius: 50%;
-        z-index: 20;
+        z-index: 110;
         margin: 10px 0px 0px 0px;
         span {
             width: 30px;

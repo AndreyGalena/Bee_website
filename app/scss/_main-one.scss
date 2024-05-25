@@ -1,13 +1,13 @@
-/* Слайдер: */
-
 .main {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 
     &__nav-menu {
         flex: 1 0 20%;
         min-width: 300px;
-        margin-right: 2px;
+        margin: 2px 2px 2px 0;
+        display: flex;
 
         .menu {
             display: flex;
@@ -39,6 +39,16 @@
                 }
             }
         }
+
+        .button-block {
+            background-color: #898683;
+            .button-nav-menu {
+                width: 25px;
+                font-size: 25px;
+                color: red;
+                margin-top: 20vh;
+            }
+        }
     }
 
     &__content-block {
@@ -47,9 +57,9 @@
             position: relative;
             top: 0;
             left: 0;
-            width: 100%;
+            // width: 100%;
             max-height: 300px;
-            margin: 2px 0 2px 0;
+            margin: 2px 0px 2px 0;
 
             .item-block {
                 position: relative;
@@ -70,21 +80,14 @@
 
             .previous,
             .next {
-                /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
                 cursor: pointer;
-                /* Положение элемента задаётся относительно границ браузера: */
                 position: absolute;
                 top: 50%;
-                // width: auto;
-                // margin-top: -22px;
                 padding: 16px;
-                /* Оформление самих кнопок: */
-                color: white;
+                color: rgb(214, 209, 209);
                 font-weight: bold;
-                font-size: 20px;
-                /* Плавное появление фона при наведении курсора: */
+                font-size: 25px;
                 transition: 0.6s ease;
-                /* Скругление границ: */
                 border-radius: 0 3px 3px 0;
             }
 
@@ -95,6 +98,7 @@
 
             .previous:hover,
             .next:hover {
+                color: rgb(224, 9, 9);
                 background-color: rgba(0, 0, 0, 0.2);
             }
         }
@@ -106,7 +110,7 @@
             font-weight: 600;
             text-align: center;
             padding: 20px 10px;
-
+            margin-bottom: 2px;
             background: url(../img/bg/honeycomb-1920.webp);
             background-color: rgba(218, 218, 97, 0.549);
             background-blend-mode: screen;
@@ -114,31 +118,28 @@
             .article-block {
                 margin-top: 30px;
                 background-color: rgb(165, 165, 159);
+
                 .category-date-block {
                     display: flex;
                     justify-content: space-between;
+                    width: 100%;
                     font-size: 20px;
                     font-weight: 500;
                     padding: 5px 20px;
                     background-color: #f8f5f2;
-                    .category-block {
-                        .category {
-                        }
-                        .category-name {
-                        }
-                    }
-                    .data-block {
-                        
-                    }
                 }
                 .content-block {
                     display: flex;
-                    img {
-                        max-width: 300px;
-                        margin: 10px;
+                    flex-wrap: wrap;
+                    .img-block {
+                        flex: 1 1 40%;
+                        img {
+                            max-width: 300px;
+                            margin: 10px;
+                        }
                     }
                     .text-block {
-                        flex: 1 1 80%;
+                        flex: 1 1 60%;
                         .title {
                             font-size: 35px;
                             color: #4f4e44;
