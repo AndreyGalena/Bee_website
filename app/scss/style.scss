@@ -5,6 +5,20 @@
         '_nav-menu_active',
         '_footer';
 
+
+html::-webkit-scrollbar {
+    width: 5px;
+}
+html::-webkit-scrollbar-track {
+    background: rgb(249, 246, 246);
+    border: 1px solid transparent;
+    background-clip: content-box;
+}
+html::-webkit-scrollbar-thumb {
+    background: rgb(133, 133, 134);
+    border: 1px solid rgb(0,0,0);
+}
+
 body {
     font-family: Raleway;
     min-height: 100vh;

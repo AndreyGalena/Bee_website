@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: auto;
     padding-top: 70px;
     z-index: 100;
-    background: linear-gradient(to bottom right, rgba(28, 234, 190, 0.8), rgba(47, 150, 209, 0.8) 110%);
+    background: linear-gradient(to bottom right, rgba(28, 234, 107, 0.8), rgb(93, 255, 102) 110%);
     transition: all 1s ease 0s;
     display: flex;
     flex-direction: column;
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 23px;
 }
 .header__one-block .menu-block .menu__item a {
-  color: #77802e;
+  color: #54371c;
   transition-duration: 0.3s;
 }
 .header__one-block .menu-block .menu__item a:hover {
@@ -239,9 +239,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #d7d0c9;
   padding: 10px;
 }
-.main__nav-menu .menu ul {
-  padding: 25px 5px;
-}
 .main__nav-menu .menu ul li a {
   color: #3b3c34;
 }
@@ -267,13 +264,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 0;
   left: 0;
-  max-height: 300px;
+  height: 330px;
   margin: 2px 0px 2px 0;
 }
 .main__content-block .slider .item-block {
   position: relative;
   width: 100%;
-  max-height: 300px;
+  height: 100%;
   animation-name: fade;
   animation-duration: 15s;
   animation-timing-function: linear;
@@ -282,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
   object-fit: cover;
   width: 100%;
-  max-height: 300px;
+  height: 100%;
 }
 .main__content-block .slider .previous,
 .main__content-block .slider .next {
@@ -324,11 +321,21 @@ h1, h2, h3, h4, h5, h6 {
 .main__content-block .contents .article-block .category-date-block {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   font-size: 20px;
   font-weight: 500;
-  padding: 5px 20px;
+  padding: 5px clamp(10px, 2vw, 20px);
   background-color: #f8f5f2;
+}
+.main__content-block .contents .article-block .category-date-block .category-block {
+  margin-right: 20px;
+}
+.main__content-block .contents .article-block .category-date-block .category-block .category {
+  color: #45ac49;
+}
+.main__content-block .contents .article-block .category-date-block .data-block .title {
+  color: #45ac49;
 }
 .main__content-block .contents .article-block .content-block {
   display: flex;
@@ -397,16 +404,19 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 29px;
   }
   .main__nav-menu {
+    height: 330px;
     transform: translateX(-91%);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
-    transition: transform 2s ease;
+    transition: transform 1s ease;
+  }
+  .main__nav-menu .menu {
+    align-items: center;
   }
   .main__nav-menu .button-block {
     display: block;
-    border-bottom-right-radius: 30px;
   }
 }
 .active-nav-menu {
@@ -419,6 +429,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   text-align: center;
   background-color: aquamarine;
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(249, 246, 246);
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(133, 133, 134);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 body {
