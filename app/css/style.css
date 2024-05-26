@@ -229,7 +229,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__nav-menu .menu {
   display: flex;
-  justify-content: center;
   width: 100%;
   height: 100%;
   font-size: 20px;
@@ -237,16 +236,32 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-style: italic;
   background-color: #d7d0c9;
-  padding: 10px;
+  padding: 5px 5px 5px 10px;
+}
+.main__nav-menu .menu ul li {
+  padding: 5px 0px 5px 0px;
 }
 .main__nav-menu .menu ul li a {
+  display: flex;
+  width: 100%;
   color: #3b3c34;
 }
 .main__nav-menu .menu ul li a .icon-menu {
   width: 20px;
 }
+.main__nav-menu .menu ul li a h3 {
+  margin-left: 10px;
+}
 .main__nav-menu .menu ul li:not(:last-child) {
-  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+.main__nav-menu .menu ul li:hover {
+  background-color: #8f8e8c;
+}
+.main__nav-menu .menu ul li:hover a h3 {
+  color: #ebede0;
+  margin-left: 20px;
+  transition: all 0.3s ease;
 }
 .main__nav-menu .button-block {
   background-color: #898683;
@@ -404,8 +419,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 29px;
   }
   .main__nav-menu {
+    min-width: 350px;
     height: 330px;
-    transform: translateX(-91%);
+    transform: translateX(-92%);
     position: absolute;
     top: 0;
     left: 0;
