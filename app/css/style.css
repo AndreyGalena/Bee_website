@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 5px 5px 10px;
 }
 .main__nav-menu .menu ul li {
-  padding: 5px 0px 5px 0px;
+  padding: 5px 5px 5px 10px;
 }
 .main__nav-menu .menu ul li a {
   display: flex;
@@ -256,6 +256,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
 }
 .main__nav-menu .menu ul li:hover {
+  border-radius: 5px;
   background-color: #8f8e8c;
 }
 .main__nav-menu .menu ul li:hover a h3 {
@@ -267,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #898683;
 }
 .main__nav-menu .button-block .button-nav-menu {
-  width: 25px;
+  width: 28px;
   font-size: 25px;
   color: red;
   margin-top: 20vh;
@@ -316,6 +317,19 @@ h1, h2, h3, h4, h5, h6 {
 .main__content-block .slider .next:hover {
   color: rgb(224, 9, 9);
   background-color: rgba(0, 0, 0, 0.2);
+}
+.main__content-block .bg-start-block {
+  display: flex;
+  height: 330px;
+}
+.main__content-block .bg-start-block .item-block {
+  width: 100%;
+  height: 100%;
+}
+.main__content-block .bg-start-block .item-block img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .main__content-block .contents {
   width: 100%;
