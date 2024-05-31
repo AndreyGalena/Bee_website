@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 28px;
   font-size: 25px;
   color: red;
-  margin-top: 20vh;
+  margin-top: 160px;
 }
 .main__content-block {
   flex: 1 1 70%;
@@ -415,20 +415,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 1000px) {
-  .main-one__nav-menu .menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .main-one__nav-menu .menu ul li {
-    padding: 0 10px;
+  .main__content-block .bg-start-block .item-block img {
+    object-fit: fill;
   }
 }
 .main__nav-menu .button-block {
   display: none;
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1200px) {
   .main__content-block .slider {
     margin-left: 29px;
   }
@@ -451,6 +446,77 @@ h1, h2, h3, h4, h5, h6 {
 }
 .active-nav-menu {
   transform: translateX(0px);
+}
+
+.history-title {
+  text-align: center;
+  margin: 20px 10px 50px 10px;
+}
+.history-title h2 {
+  font-size: clamp(40px, 4vw, 45px);
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  color: #313106;
+}
+
+.carts-block .cart {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  background-color: rgb(201, 199, 196);
+  margin: 20px 15px 30px 15px;
+}
+.carts-block .cart .img-block {
+  flex: 1 1 21%;
+  padding: 30px 15px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline;
+}
+.carts-block .cart .img-block img {
+  width: 100%;
+}
+.carts-block .cart .img-block .month,
+.carts-block .cart .img-block .date {
+  position: absolute;
+  font-size: clamp(20px, 4vw, 30px);
+  color: red;
+}
+.carts-block .cart .img-block .month {
+  top: 32%;
+  left: 28%;
+  font-size: clamp(25px, 4vw, 30px);
+}
+.carts-block .cart .img-block .date {
+  top: 50%;
+  left: 38%;
+  font-size: clamp(35px, 4vw, 40px);
+}
+.carts-block .cart .text-block {
+  flex: 1 1 70%;
+}
+.carts-block .cart .text-block .title {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  color: #313106;
+  padding: 20px 15px 30px 15px;
+}
+.carts-block .cart .text-block .text {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 25px;
+  max-width: 600px;
+  padding: 0px 20px 30px 20px;
+  margin: auto;
 }
 
 .footer .wrapper-container {
