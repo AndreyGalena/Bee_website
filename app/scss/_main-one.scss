@@ -66,14 +66,14 @@
 
     &__content-block {
         flex: 1 1 70%;
-
+        
         .slider {
             position: relative;
             top: 0;
             left: 0;
             height: 330px;
             margin: 2px 0px 2px 0;
-
+            
             .item-block {
                 position: relative;
                 width: 100%;
@@ -118,6 +118,7 @@
         .bg-start-block {
             display: flex;
             height: 330px;
+            margin: 2px 0px;
             .item-block {
                 width: 100%;
                 height: 100%;
@@ -130,7 +131,7 @@
         }
             
         .contents .article-block {
-                margin-top: 30px;
+                margin: 30px 20px 10px 20px;
                 background-color: rgb(165, 165, 159);
 
                 .category-date-block {

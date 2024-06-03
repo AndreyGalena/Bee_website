@@ -321,6 +321,7 @@ h1, h2, h3, h4, h5, h6 {
 .main__content-block .bg-start-block {
   display: flex;
   height: 330px;
+  margin: 2px 0px;
 }
 .main__content-block .bg-start-block .item-block {
   width: 100%;
@@ -332,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 .main__content-block .contents .article-block {
-  margin-top: 30px;
+  margin: 30px 20px 10px 20px;
   background-color: rgb(165, 165, 159);
 }
 .main__content-block .contents .article-block .category-date-block {
@@ -429,12 +430,51 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(0px);
 }
 
-.color-history {
-  color: red;
+.history__title {
+  padding: 30px 10px;
 }
-
-.color-event {
-  color: rgb(6, 161, 16);
+.history__title h2 {
+  font-size: clamp(40px, 4vw, 45px);
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  color: #101010;
+}
+.history__text-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.history__text-block .img-block {
+  flex: 1 0 400px;
+  padding: 20px;
+}
+.history__text-block .img-block img {
+  width: 100%;
+}
+.history__text-block .text {
+  flex: 1 1 60%;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: start;
+  padding: 20px 15px 30px 15px;
+}
+.history__text-block .text p {
+  margin-bottom: 20px;
+}
+.icon-sell-honey {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 200;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px black;
+  background-color: blanchedalmond;
+  padding: 10px;
+}
+.icon-sell-honey .img-sell-honey {
+  width: 64px;
 }
 
 .footer .wrapper-container {
@@ -486,7 +526,7 @@ body {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
-  padding: 20px 10px;
+  padding: 2px;
   margin-bottom: 2px;
   background: url(../img/bg/honeycomb-1920.webp);
   background-color: rgba(218, 218, 97, 0.549);
@@ -528,16 +568,19 @@ body {
 .contents__carts-block .cart .img-block .img-wraper .month,
 .contents__carts-block .cart .img-block .img-wraper .date {
   position: absolute;
+  color: rgb(6, 161, 16);
 }
 .contents__carts-block .cart .img-block .img-wraper .month {
   top: 45px;
-  left: 20px;
+  left: 0px;
   font-size: 30px;
+  width: 100%;
 }
 .contents__carts-block .cart .img-block .img-wraper .date {
   top: 95px;
-  left: 56px;
+  left: 0px;
   font-size: 40px;
+  width: 100%;
 }
 .contents__carts-block .cart .text-block {
   flex: 1 1 70%;

@@ -5,6 +5,7 @@
 '_nav-menu_active',
 '_history',
 '_events',
+'_absolut-icon',
 '_footer';
 
 
@@ -51,7 +52,7 @@ body {
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-    padding: 20px 10px;
+    padding: 2px;
     margin-bottom: 2px;
     background: url(../img/bg/honeycomb-1920.webp);
     background-color: rgba(218, 218, 97, 0.549);
@@ -97,18 +98,21 @@ body {
                     .month,
                     .date {
                         position: absolute;
+                        color: rgb(6, 161, 16);
                     }
-                    // and _history style
+                    
                     .month {
                         top: 45px;
-                        left: 20px;
+                        left: 0px;
                         font-size: 30px;
+                        width: 100%;
                     }
 
                     .date {
                         top: 95px;
-                        left: 56px;
+                        left: 0px;
                         font-size: 40px;
+                        width: 100%;
                     }
                 }
             }
