@@ -18,7 +18,8 @@
         flex-wrap: wrap;
 
         .img-block {
-            flex: 1 0 400px;
+            flex: 1 1 400px;
+            // min-width: 200px;
             padding: 20px;
             img {
                 width: 100%;
@@ -37,6 +38,17 @@
         }
     }
     .gugleMap-block {
-        // background-color: rgba(218, 218, 97, 0.549);
+        display: flex;
+        justify-content: center;
+        margin: 10px 20px;
+        iframe {
+            flex: 1 1 500px;
+            // min-width: 200px;
+            min-height: 300px;
+            // max-width: 500px;
+            // max-height: 400px;
+            // width: 100%;
+            // height: 100%;
+        }
     }
 }

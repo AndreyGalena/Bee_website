@@ -6,8 +6,12 @@
 '_history',
 '_events',
 '_absolut-icon',
+'_selling-honey',
 '_footer';
 
+// * {
+//     border: 1px solid red;
+// }
 
 // Изменяет скрол.
 html::-webkit-scrollbar {
@@ -136,6 +140,7 @@ body {
                     font-size: 24px;
                     font-weight: 500;
                     line-height: 25px;
+                    text-align: start;
                     max-width: 600px;
                     padding: 0px 20px 30px 20px;
                     margin: auto;
@@ -146,6 +151,7 @@ body {
 }
 
 .button-block-all {
+    width: 100%;
     margin: auto;
     padding: 20px;
 

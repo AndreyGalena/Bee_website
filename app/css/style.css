@@ -292,7 +292,6 @@ h1, h2, h3, h4, h5, h6 {
   animation-timing-function: linear;
 }
 .main__content-block .slider .item-block img {
-  /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -447,7 +446,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 .history__text-block .img-block {
-  flex: 1 0 400px;
+  flex: 1 1 400px;
   padding: 20px;
 }
 .history__text-block .img-block img {
@@ -463,18 +462,72 @@ h1, h2, h3, h4, h5, h6 {
 .history__text-block .text p {
   margin-bottom: 20px;
 }
+.history .gugleMap-block {
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px;
+}
+.history .gugleMap-block iframe {
+  flex: 1 1 500px;
+  min-height: 300px;
+}
+
 .icon-sell-honey {
   position: fixed;
   bottom: 30px;
   right: 30px;
   z-index: 200;
   border-radius: 50%;
+  border: 1px solid rgb(113, 110, 110);
   box-shadow: 2px 2px 5px black;
   background-color: blanchedalmond;
   padding: 10px;
+  animation: honey 4s 1s linear infinite;
 }
 .icon-sell-honey .img-sell-honey {
-  width: 64px;
+  width: 60px;
+}
+
+@keyframes honey {
+  0% {
+    transform: scale(1, 1);
+  }
+  5% {
+    transform: scale(1.1, 1.1);
+  }
+  10% {
+    transform: scale(1, 1);
+  }
+}
+.contents__carts-block .cart .img-block-sell-honey {
+  flex: 1 1 20%;
+  padding: 30px 15px;
+}
+.contents__carts-block .cart .img-block-sell-honey img {
+  max-width: 200px;
+  border-radius: 20px;
+}
+.contents__carts-block .cart .specification-block {
+  flex: 1 1 70%;
+}
+.contents__carts-block .cart .specification-block .name {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  text-align: start;
+  color: #313106;
+  padding: 20px 15px 30px 15px;
+}
+.contents__carts-block .cart .specification-block .our-adress {
+  font-size: 25px;
+  text-align: start;
+  font-weight: 500;
+}
+.contents__carts-block .cart .specification-block .our-adress ul li {
+  padding: 10px 15px;
 }
 
 .footer .wrapper-container {
@@ -600,12 +653,14 @@ body {
   font-size: 24px;
   font-weight: 500;
   line-height: 25px;
+  text-align: start;
   max-width: 600px;
   padding: 0px 20px 30px 20px;
   margin: auto;
 }
 
 .button-block-all {
+  width: 100%;
   margin: auto;
   padding: 20px;
 }
