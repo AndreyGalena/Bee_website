@@ -499,35 +499,73 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1, 1);
   }
 }
-.contents__carts-block .cart .img-block-sell-honey {
-  flex: 1 1 20%;
-  padding: 30px 15px;
+@media screen and (max-width: 900px) {
+  .cart-honey {
+    max-width: 100% !important;
+  }
 }
-.contents__carts-block .cart .img-block-sell-honey img {
+.contents__carts-honey-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contents__carts-honey-block .cart-honey {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  max-width: 48%;
+  box-shadow: 0px 0px 10px black;
+  background-color: rgb(201, 199, 196);
+  margin: 30px 10px 10px 10px;
+}
+.contents__carts-honey-block .cart-honey .img-block-sell-honey {
+  flex: 1 1 15%;
+  padding: 20px 5px;
+}
+.contents__carts-honey-block .cart-honey .img-block-sell-honey img {
   max-width: 200px;
   border-radius: 20px;
 }
-.contents__carts-block .cart .specification-block {
-  flex: 1 1 70%;
+.contents__carts-honey-block .cart-honey .specification-block {
+  flex: 1 1 40%;
+  width: 100%;
 }
-.contents__carts-block .cart .specification-block .name {
+.contents__carts-honey-block .cart-honey .specification-block .name {
   font-size: 30px;
   font-style: italic;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 10px;
+  white-space: nowrap;
   text-align: start;
   color: #313106;
-  padding: 20px 15px 30px 15px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 20px 10px 30px 5px;
 }
-.contents__carts-block .cart .specification-block .our-adress {
+.contents__carts-honey-block .cart-honey .specification-block .our-adress {
   font-size: 25px;
   text-align: start;
   font-weight: 500;
+  max-width: 100%;
 }
-.contents__carts-block .cart .specification-block .our-adress ul li {
-  padding: 10px 15px;
+.contents__carts-honey-block .cart-honey .specification-block .our-adress ul li {
+  display: flex;
+  overflow: hidden;
+  padding: 10px 5px;
+}
+.contents__carts-honey-block .cart-honey .specification-block .our-adress ul li img {
+  padding: 5px;
+  max-width: 40px;
+}
+.contents__carts-honey-block .cart-honey .specification-block .our-adress ul li p {
+  width: 100%;
+  overflow: hidden;
+  margin: auto 0px;
+}
+.contents__carts-honey-block .cart-honey .specification-block .our-adress ul li a {
+  margin: auto 0px;
 }
 
 .footer .wrapper-container {
