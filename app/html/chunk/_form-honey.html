@@ -1,0 +1,57 @@
+<section class="section">
+    <div class="wrapper-container">
+        <div class="main">
+            @@include("../html-parts/_nav-menu.html")
+            <div class="main__content-block">
+                <!--  -->
+                <div class="bg-start-block">
+                    <div class="item-block">
+                        <img src="../../img/slider/honey-1280.webp" alt="foto">
+                    </div>
+                </div>
+                <!--  -->
+                <div class="contents">
+                    <div class="contents__title">
+                        <h2>Продажа мёда.</h2>
+                    </div>
+                    <!-- Form -->
+                    <div class="input-block">
+                        <form class="form" method="post" action="">
+                            <!-- Name -->
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="name">Ihr Name</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="name" name="name" placeholder="Ihr Name.." required tabindex="1">
+                                </div>
+                            </div>
+                            <!-- Email -->
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="email">Deine E-Mail</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="email" id="email" name="email" placeholder="Deine E-Mail.." 
+                                    aria-describedby="emailHelp" required tabindex="2">
+                                </div>
+                            </div>
+                            <!-- Comment -->
+                            <div class="row">
+                                <div class="col-25 comment-block">
+                                    <label for="comment">Kommentar</label>
+                                </div>
+                                <div class="col-75">
+                                    <textarea id="comment" name="comment" placeholder="waren Beschreibung.." tabindex="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="row-button">
+                                <input type="submit" value="Einreichen" tabindex="4">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

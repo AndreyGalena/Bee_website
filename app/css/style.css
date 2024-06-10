@@ -488,6 +488,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 60px;
 }
 
+.form-icon-sell {
+  overflow: hidden;
+}
+
 @keyframes honey {
   0% {
     transform: scale(1, 1);
@@ -566,6 +570,68 @@ h1, h2, h3, h4, h5, h6 {
 }
 .contents__carts-honey-block .cart-honey .specification-block .our-adress ul li a {
   margin: auto 0px;
+}
+
+.input-block {
+  padding: 10px;
+  margin: 10px 30px;
+}
+.input-block .form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgb(238, 244, 244);
+  border: 1px solid black;
+  padding: 10px;
+}
+.input-block .form .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+.input-block .form .row .col-25 {
+  flex: 0 1 100px;
+  display: flex;
+  align-items: center;
+}
+.input-block .form .row .col-25 label {
+  font-size: 18px;
+  font-weight: 500;
+}
+.input-block .form .row .comment-block {
+  align-items: flex-start;
+}
+.input-block .form .row .col-75 {
+  flex: 1 1 200px;
+}
+.input-block .form .row .col-75 input {
+  font-size: 16px;
+  font-weight: 500;
+  height: 30px;
+  min-width: 100%;
+  border-radius: 5px;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  border: 1px solid rgb(110, 108, 108);
+  background-color: rgb(237, 237, 243);
+}
+.input-block .form .row .col-75 textarea {
+  font-size: 16px;
+  font-weight: 500;
+  min-height: 100px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  border: 1px solid rgb(110, 108, 108);
+}
+.input-block .form .row-button {
+  display: flex;
+  justify-content: center;
+}
+.input-block .form .row-button input {
+  background-color: cadetblue;
+  border-radius: 10px;
+  padding: 15px 20px;
 }
 
 .footer .wrapper-container {
