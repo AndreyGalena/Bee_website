@@ -573,10 +573,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .input-block {
-  padding: 10px;
-  margin: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px 15px 0px 10px;
 }
 .input-block .form {
+  flex: 1 1 600px;
   max-width: 600px;
   margin: 0 auto;
   background-color: rgb(238, 244, 244);
