@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     overflow: auto;
     padding-top: 70px;
-    z-index: 1000;
+    z-index: 200;
     background: linear-gradient(to bottom right, rgba(28, 234, 107, 0.8), rgb(93, 255, 102) 110%);
     transition: all 1s ease 0s;
     display: flex;
@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 50px;
     background-color: #5a8b87;
     border-radius: 50%;
-    z-index: 1010;
+    z-index: 210;
     margin: 10px 0px 0px 0px;
   }
   .menu-btn span {
@@ -639,14 +639,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px 20px;
 }
 
-.gallery {
+.gallery-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
+}
+.gallery-wrapper .gallery {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  margin: 5px;
+  padding: 5px;
 }
-.gallery .box {
+.gallery-wrapper .gallery .box {
   flex: 1 1 200px;
   border: 2px solid gray;
   box-shadow: 0px 0px 10px black;
@@ -656,47 +662,33 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 250px;
   margin: 5px;
   transition: transform 2s ease;
+  background-color: #d6cccc;
 }
-.gallery .box img {
+.gallery-wrapper .gallery .box img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.gallery .box img:hover {
+.gallery-wrapper .gallery .box img:hover {
   transform: rotate(2deg) scale(1.1, 1.1);
 }
-.gallery .box-active {
+.gallery-wrapper .gallery .box-active {
   position: fixed;
-  top: 10%;
-  left: 30%;
-  z-index: 100;
-}
-.gallery .box-active img {
+  top: 0%;
+  left: 0%;
   width: 100%;
+  height: 100%;
+  z-index: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-wrapper .gallery .box-active img {
+  width: 98%;
+  max-width: 600px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 1000px) {
-  .box-active {
-    top: 15% !important;
-    left: 20% !important;
-  }
-}
-@media screen and (max-width: 850px) {
-  .box-active {
-    left: 10% !important;
-  }
-}
-@media screen and (max-width: 750px) {
-  .box-active {
-    left: 6% !important;
-  }
-}
-@media screen and (max-width: 650px) {
-  .box-active {
-    top: 20% !important;
-    left: 0% !important;
-  }
-}
 .footer .wrapper-container {
   width: 100%;
   min-height: 50px;
