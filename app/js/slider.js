@@ -23,7 +23,7 @@ function currentSlide(n) {
 function showSlides(n) {
     /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
     let slides = document.getElementsByClassName("item-block");
-
+    console.log(slides);
     /* Проверяем количество слайдов: */
     if (n > slides.length) {
         slideIndex = 1
@@ -35,7 +35,9 @@ function showSlides(n) {
     /* Проходим по каждому слайду в цикле for: */
     for (let slide of slides) {
         slide.style.display = "none";
+        console.log("none");
     }
     /* Делаем элемент блочным: */
     slides[slideIndex - 1].style.display = "block";
+    console.log("block");
 }
