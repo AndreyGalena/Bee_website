@@ -204,15 +204,3 @@
         opacity: 0.2;
     }
 }
-
-@media (max-width: 1000px) {
-    .main__content-block {
-        .bg-start-block {
-            .item-block {
-                img {
-                    object-fit: fill;
-                }
-            }
-        }
-    }
-}

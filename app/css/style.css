@@ -400,11 +400,6 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.2;
   }
 }
-@media (max-width: 1000px) {
-  .main__content-block .bg-start-block .item-block img {
-    object-fit: fill;
-  }
-}
 .main__nav-menu .button-block {
   display: none;
 }
@@ -690,7 +685,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .gallery-wrapper .gallery .box-active img {
   width: 98%;
-  max-width: 600px;
+  max-width: 800px;
   cursor: pointer;
 }
 
@@ -795,6 +790,7 @@ html::-webkit-scrollbar-thumb {
 body {
   font-family: Raleway;
   min-height: 100vh;
+  min-width: 100%;
 }
 
 .section,
@@ -826,10 +822,10 @@ body {
 }
 .contents__title {
   text-align: center;
-  margin: 20px 10px 50px 10px;
+  margin: 20px 5px 50px 5px;
 }
 .contents__title h2 {
-  font-size: clamp(40px, 4vw, 45px);
+  font-size: clamp(25px, 8vw, 45px);
   font-style: italic;
   text-transform: uppercase;
   font-weight: 600;
