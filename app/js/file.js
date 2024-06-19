@@ -39,4 +39,8 @@ document.body.addEventListener("click", function(e) {
 
     // Обрабатывает фото Галерею.
     fotoGallery(item);
+
+    // Работа с выпадающим меню.
+    popup_run(directСlick);
+    clickBody (directСlick);
 });

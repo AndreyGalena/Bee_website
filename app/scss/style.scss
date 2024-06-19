@@ -9,11 +9,8 @@
 '_selling-honey',
 '_form-honey',
 '_photo-gallery',
+'_popup_menu',
 '_footer';
-
-// * {
-//     border: 1px solid red;
-// }
 
 // Изменяет скрол.
 html::-webkit-scrollbar {
@@ -154,7 +151,7 @@ body {
 
 .button-block-all {
     width: 100%;
-    margin: auto;
+    // margin: auto;
     padding: 20px;
 
     .button-a {

@@ -130,6 +130,8 @@
         }
             
         .contents .article-block {
+                border-radius: 10px;
+                overflow: hidden;
                 margin: 30px 20px 10px 20px;
                 background-color: rgb(165, 165, 159);
 
@@ -166,10 +168,14 @@
                     }
                     .text-block {
                         flex: 1 1 60%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
                         .title {
                             font-size: 35px;
                             color: #4f4e44;
-                            padding: 5px 10px 10px 20px;
+                            padding: 10px 10px 10px 20px;
                         }
                         .text {
                             font-size: 23px;
@@ -184,20 +190,16 @@
 }
 
 @keyframes fade {
-
     /* Устанавливаем и изменяем степень прозрачности: */
     0% {
         opacity: 0.2
     }
-
     25% {
         opacity: 1
     }
-
     75% {
         opacity: 1;
     }
-
     100% {
         opacity: 0.2;
     }
