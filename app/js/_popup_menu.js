@@ -3,12 +3,14 @@ function popup_run(directСlick) {
     const contentActions = document.querySelector('.sub-menu__list');
 
     // присутствует ли указанный класс в элементе,
-    if (directСlick.classList.contains("fa-caret-down")) {
+    if (directСlick.classList.contains("multi-menu-down")) {
         // меняет класс.
+        directСlick.classList.replace("multi-menu-down", "multi-menu-up");
         directСlick.classList.replace("fa-caret-down", "fa-caret-up");
         contentActions.classList.replace("hide-content", "show-content");
     }
-    else  if (directСlick.classList.contains("fa-caret-up")) {
+    else  if (directСlick.classList.contains("multi-menu-up")) {
+        directСlick.classList.replace("multi-menu-up", "multi-menu-down");
         directСlick.classList.replace("fa-caret-up", "fa-caret-down");
         contentActions.classList.replace("show-content", "hide-content");
     } // при нажатии по тексту(не по стрелке).

@@ -43,4 +43,11 @@ document.body.addEventListener("click", function(e) {
     // Работа с выпадающим меню.
     popup_run(directСlick);
     clickBody (directСlick);
+
+    // Обработка выпадения протоколов.
+    if (directСlick.classList.contains("protocol-down")) {
+        popup_protocol_down(e, directСlick);
+    } else if (directСlick.classList.contains("protocol-up")) {
+        popup_protocol_up(e, directСlick);
+    };
 });
