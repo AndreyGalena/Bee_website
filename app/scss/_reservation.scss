@@ -1,0 +1,30 @@
+.reservation-title {
+    font-size: clamp(25px, 4vw, 35px);
+    padding: 10px 5px;
+}
+
+.checkbox {
+    width: 20px;
+	height: 20px;
+}
+
+.date-taken, .start-time {
+    color: green;
+    .textinput-start {
+        font-size: 25px;
+        color: green;
+        background-color: rgb(225, 220, 220);
+    }
+}
+
+.start-time {
+    color: green;
+}
+
+.date-return {
+    color: red;
+}
+
+.finish-time {
+    color: red;
+}

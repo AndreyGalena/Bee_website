@@ -1,10 +1,12 @@
 // Когда < 900px
 .header {
+    background-color: aquamarine;
+
     &__one-block {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: aquamarine;
+        // background-color: aquamarine;
         .icon-block {
             .icon-block__icon-a {
                 display: inline-block;

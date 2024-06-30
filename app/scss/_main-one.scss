@@ -132,7 +132,7 @@
         .contents .article-block {
                 border-radius: 10px;
                 overflow: hidden;
-                margin: 30px 20px 10px 20px;
+                margin: 30px clamp(5px, 1vw, 20px) 10px clamp(5px, 1vw, 20px);
                 background-color: rgb(165, 165, 159);
 
                 .category-date-block {
@@ -163,7 +163,8 @@
                         flex: 1 1 40%;
                         img {
                             max-width: 300px;
-                            margin: 10px;
+                            min-width: 200px;
+                            margin: clamp(2px, 1vw, 10px);
                         }
                     }
                     .text-block {

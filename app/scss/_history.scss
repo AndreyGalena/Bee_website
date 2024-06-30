@@ -19,7 +19,7 @@
 
         .img-block {
             flex: 1 1 400px;
-            padding: 20px;
+            padding: clamp(5px, 1vw, 20px);
             img {
                 width: 100%;
             }

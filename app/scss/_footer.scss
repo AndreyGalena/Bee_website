@@ -1,9 +1,11 @@
 .footer {
+    background-color: aquamarine;
     .wrapper-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         min-height: 50px;
         font-size: 20px;
-        text-align: center;
-        background-color: aquamarine;
     }
 }

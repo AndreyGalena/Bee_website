@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <section class="section bg-header">
+    <section class="section">
     <div class="wrapper-container">
         <header class="header">
             <div class="header__one-block">
@@ -133,14 +133,68 @@
                     <div class="contents__title">
                         <h2>Бронь аппаратуры</h2>
                     </div>
+                    <div class="reservation">
+                        <div class="table-block">
+                            <table class="table">
+                                <caption class="reservation-title">
+                                    Кто взял трактор.
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th><label for="chec">Взял</label></th>
+                                        <th>Имя</th>
+                                        <th>Дата получения</th>
+                                        <th>Время получения</th>
+                                        <th>Дата возврата</th>
+                                        <th>Время возврата</th>
+                                        <th>Вернул</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
+                                        <td>Ivanov</td>
+                                        <td class="date-taken">
+                                            <input type="date" class="textinput-start"/>
+                                        </td>
+                                        <td class="start-time">
+                                            <input type="time" class="textinput-start"/>
+                                        </td>
+                                        <td class="date-return">24.04.24</td>
+                                        <td class="finish-time">16:00</td>
+                                        <td><input class="checkbox" type="checkbox" name="#" value="yes"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
+                                        <td>Petrov</td>
+                                        <td class="date-taken">25.04.24</td>
+                                        <td class="start-time">9:00</td>
+                                        <td class="date-return">27.04.24</td>
+                                        <td class="finish-time">12:00</td>
+                                        <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
+                                        <td>Sidorov</td>
+                                        <td class="date-taken">01.05.24</td>
+                                        <td class="start-time">9:00</td>
+                                        <td class="date-return">03.05.24</td>
+                                        <td class="finish-time">13:00</td>
+                                        <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
 </section>
     <footer class="footer">
     <div class="wrapper-container">
-        Это подвал
+        <p>©2024 Alle Rechte vorbehalten</p>
     </div>
 </footer>
     
