@@ -1,50 +1,40 @@
 // Работа с выпадающим меню.
-function popup_run(directСlick) {
-    const contentActions = document.querySelector('.sub-menu__list');
 
-    // присутствует ли указанный класс в элементе,
-    if (directСlick.classList.contains("multi-menu-down")) {
-        // меняет класс.
-        directСlick.classList.replace("multi-menu-down", "multi-menu-up");
-        directСlick.classList.replace("fa-caret-down", "fa-caret-up");
-        contentActions.classList.replace("hide-content", "show-content");
-    }
-    else  if (directСlick.classList.contains("multi-menu-up")) {
-        directСlick.classList.replace("multi-menu-up", "multi-menu-down");
-        directСlick.classList.replace("fa-caret-up", "fa-caret-down");
-        contentActions.classList.replace("show-content", "hide-content");
-    } // при нажатии по тексту(не по стрелке).
-    else if (directСlick.classList.contains("menu__link")) {
-        const item_up = document.querySelector('.fa-caret-up');
-        const item_down = document.querySelector('.fa-caret-down');
-
-        if(item_up) { // не null
-            // присутствует ли указанный класс в элементе,
-            if(item_up.classList.contains("fa-caret-up")) {
-                item_up.classList.replace("fa-caret-up", "fa-caret-down");
-                contentActions.classList.replace("show-content", "hide-content");
-            }
-        } 
-        else if (item_down) { // не null
-            // присутствует ли указанный класс в элементе,
-            if(item_down.classList.contains("fa-caret-down")) {
-                item_down.classList.replace("fa-caret-down", "fa-caret-up");
-                contentActions.classList.replace("hide-content", "show-content");
-            }
-        }
+// Закрываем все открытые элементы меню.
+function closedAll() {
+    // находим все открытые элементы
+    let items = document.querySelectorAll('.show-content');
+    // и закрываем их.
+    for (let i = 0; i < items.length; i++) {
+        items[i].classList.replace("show-content", "hide-content");
     }
 };
 
-function clickBody (directСlick) {
-    let item = document.querySelector('.show-content');
-    let icon = document.querySelector('.fa-caret-up');
-
-    // присутствует ли указанный класс в элементе,
-    if (directСlick.classList.contains("fa-caret-down") != true &&
-    directСlick.classList.contains("fa-caret-up") != true && 
-    directСlick.classList.contains("menu__link") != true &&
-        item != null) {
-            item.classList.replace("show-content", "hide-content");
-            icon.classList.replace("fa-caret-up", "fa-caret-down");
+function popup_run(directСlick) {
+    // если кликнул по тексту первого слоя.
+    if (directСlick.classList.contains("one-element")) {
+        // находим второй слой (sub-menu__list)
+        const subMenu = document.querySelector(".sub-menu__list");
+        // проверяем в каком состоянии (открыто/закрыто).
+        if (subMenu.classList.contains("hide-content")) {
+            subMenu.classList.replace("hide-content", "show-content");
+        } else {
+            // закрываем все открытые элементы меню.
+            closedAll ();
+        }
+    } // если я кликну по тексту второго слоя.
+    else if (directСlick.classList.contains("two-element")) {
+        // находим третий слой (sub-sub-menu__list)
+        const subSubMenu = document.querySelector(".sub-sub-menu__list");
+        // проверяем в каком состоянии (открыто/закрыто).
+        if (subSubMenu.classList.contains("hide-content")) {
+            subSubMenu.classList.replace("hide-content", "show-content");
+        } else {
+            subSubMenu.classList.replace("show-content", "hide-content");
+        }
+    } // если кликнул по body
+    else {
+        // закрываем все открытые элементы меню.
+        closedAll();
     }
 };

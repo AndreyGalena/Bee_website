@@ -40,9 +40,9 @@ document.body.addEventListener("click", function(e) {
     // Обрабатывает фото Галерею.
     fotoGallery(item);
 
-    // Работа с выпадающим меню.
+    // Работа с popup выпадающим меню.
     popup_run(directСlick);
-    clickBody (directСlick);
+    // clickBody (directСlick);
 
     // Обработка выпадения протоколов.
     if (directСlick.classList.contains("protocol-down")) {

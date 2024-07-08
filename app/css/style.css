@@ -240,22 +240,19 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #d7d0c9;
   padding: 5px 5px 5px 10px;
 }
-.main__nav-menu .menu ul li {
-  padding: 5px 5px 5px 10px;
+.main__nav-menu .menu ul .menu-link {
+  padding: 10px 5px 10px 10px;
 }
-.main__nav-menu .menu ul li a {
+.main__nav-menu .menu ul .menu-link a {
   display: flex;
   width: 100%;
   color: #3b3c34;
 }
-.main__nav-menu .menu ul li a .icon-menu {
+.main__nav-menu .menu ul .menu-link a .icon-menu {
   width: 20px;
 }
-.main__nav-menu .menu ul li a h3 {
+.main__nav-menu .menu ul .menu-link a h3 {
   margin-left: 10px;
-}
-.main__nav-menu .menu ul li:not(:last-child) {
-  margin-bottom: 10px;
 }
 .main__nav-menu .menu ul li:hover {
   border-radius: 5px;
@@ -706,7 +703,7 @@ tbody {
   cursor: pointer;
 }
 
-/* Первый слой */
+/* Multi-menu */
 .nav-menu .menu__list .sub-menu {
   display: flex;
   position: relative;
@@ -714,23 +711,27 @@ tbody {
   font-size: 20px;
   font-weight: 600;
   font-style: italic;
-  cursor: pointer;
-  z-index: 100;
+  padding: 10px 5px;
+  cursor: alias;
   /* Второй слой */
   /* Логика */
 }
-.nav-menu .menu__list .sub-menu .icon-menu {
+.nav-menu .menu__list .sub-menu .block-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.nav-menu .menu__list .sub-menu .block-button .icon-menu {
   width: 20px;
 }
-.nav-menu .menu__list .sub-menu .menu__link {
+.nav-menu .menu__list .sub-menu .block-button .menu__link {
   user-select: none;
-  cursor: pointer;
   color: #3b3c34;
   margin-left: 10px;
 }
 .nav-menu .menu__list .sub-menu .sub-menu__list {
   position: absolute;
-  top: 35px;
+  top: 50px;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -748,14 +749,49 @@ tbody {
   font-weight: 600;
   color: #181d18;
   line-height: 33px;
+  padding: 0px 10px 0px 10px;
 }
 .nav-menu .menu__list .sub-menu .sub-menu__list .sub-menu__link:hover {
   color: #ebede0;
 }
-.nav-menu .menu__list .sub-menu .sub-menu__list > li {
+.nav-menu .menu__list .sub-menu .sub-menu__list .sub-sub-menu {
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  padding: 10px 5px;
+  cursor: alias;
+}
+.nav-menu .menu__list .sub-menu .sub-menu__list .sub-sub-menu .sub-sub-menu__list {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 5px;
+  background-color: #b0acac;
+}
+.nav-menu .menu__list .sub-menu .sub-menu__list .sub-sub-menu .sub-sub-menu__list .sub-sub-menu__link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background-color: #a8a4a4;
+  text-decoration: none;
+  color: #181d18;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.nav-menu .menu__list .sub-menu .sub-menu__list .sub-sub-menu .sub-sub-menu__list .sub-sub-menu__link:hover {
+  color: #ffffff;
+  background-color: #535151;
 }
 .nav-menu .menu__list .sub-menu .hide-content {
   max-height: 0;
@@ -767,13 +803,8 @@ tbody {
 .nav-menu .menu__list .sub-menu .show-content {
   max-height: 500px;
   font-size: 18px;
-  overflow: hidden;
   transform: translateY(0%);
   transition: all 0.5s ease-in 0s;
-}
-.nav-menu .menu__list .sub-menu .drop-down {
-  cursor: pointer;
-  padding-left: 20px;
 }
 .nav-menu .menu__list .sub-menu:hover .menu__link {
   color: #ebede0;

@@ -53,53 +53,64 @@
     <!--  -->
     <nav class="menu">
         <ul>
-            <li>
+            <li class="menu-link">
                 <a href="./events.html">
                     <img class="icon-menu" src="../../img/icon-nav-menu/icon-booking.png" alt="icon-booking"> 
                     <h3>Veranstaltungen</h3>
                 </a>
             </li>
-            <li>
+            <li class="menu-link">
                 <a href="./photo-gallery.html">
                     <img class="icon-menu" src="../../img/icon-nav-menu/icon-image-gallery.png" alt="image-gallery">
                     <h3>Fotogallerie</h3>
                 </a>
             </li>
-            <li>
+            <li class="menu-link">
                 <a href="./selling-honey.html">
                     <img class="icon-menu" src="../../img/icon/icon-honey-jar.png" alt="honey-jar">
                     <h3>Wer verkauft Honig?</h3>
                 </a>
             </li>
-            <li>
+            <li class="menu-link">
                 <a href="./history.html">
                     <img class="icon-menu" src="../../img/icon-nav-menu/icon-history-book.png" alt="history-book">
                     <h3>Unsere Geschichte</h3>
                 </a>
             </li>
-            <li>
+            <li class="menu-link">
                 <a href="./contacts.html">
                     <img class="icon-menu" src="../../img/icon-nav-menu/icon-contacts.png" alt="contacts">
                     <h3>Kontaktiere uns</h3>
                 </a>
             </li>
             <!-- multi-menu -->
-            <nav class="nav-menu">
+            <li class="nav-menu">
                 <ul class="menu__list">
+                    <!-- Кнопка 3-го уровня -->
                     <li class="sub-menu">
-                        <img class="icon-menu" src="../../img/icon-nav-menu/free-icon-menu.png" alt="contacts">
-                        <span class="menu__link">Секретное меню</span>
-                        <div class="drop-down">
-                            <i class="fa-solid fa-caret-down multi-menu-down"></i>
+                        <div class="block-button">
+                            <img class="icon-menu" src="../../img/icon-nav-menu/free-icon-menu.png" alt="contacts">
+                            <div class="menu__link one-element">Секретное меню</div>
                         </div>
                         <!-- 2-уровень -->
                         <ul class="sub-menu__list hide-content">
                             <li><a href="../minutes-of-meetings.html" class="sub-menu__link">Протоколы заседаний</a></li>
-                            <li><a href="../reservation.html" class="sub-menu__link">Бронь аппаратуры</a></li>
+                            <!-- Кнопка 3-го уровня -->
+                            <li class="sub-sub-menu">
+                                <div class="block-button">
+                                    <div class="menu__link two-element">Бронь аппаратуры</div>
+                                </div>
+                                <!-- 3-уровень -->
+                                <ul class="sub-sub-menu__list hide-content">
+                                    <li><a href="../reservation.html" class="sub-sub-menu__link">Трактор</a></li>
+                                    <li><a href="#" class="sub-sub-menu__link">Дымарь</a></li>
+                                    <li><a href="#" class="sub-sub-menu__link">Лопата</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
-            </nav>
+            </li>
             <!-- <li>
                 <a href="./scales.html">
                     <img class="icon-menu" src="../../img/icon-nav-menu/icon-weight-scale.png" alt="image-gallery">
