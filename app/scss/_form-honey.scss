@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
-    padding: 0px 15px 0px 10px;
+    // min-height: 100vh;
+    padding: clamp(20px, 4vh, 50px) 10px clamp(20px, 4vh, 50px) 10px;
     .form {
         flex: 1 1 600px;
         max-width: 600px;

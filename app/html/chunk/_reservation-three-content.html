@@ -1,3 +1,4 @@
+<!-- Бронь аппаратуры три -->
 <section class="section">
   <div class="wrapper-container">
     <div class="main">
@@ -33,38 +34,39 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
-                    <td>Ivanov</td>
-                    <td class="date-taken">20.03.24</td>
-                    <td class="start-time">12:00</td>
-                    <td class="date-return">24.04.24</td>
-                    <td class="finish-time">16:00</td>
-                    <td><input class="checkbox" type="checkbox" name="#" value="yes"></td>
+                    <td data-label="Взял"><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
+                    <td data-label="Имя">Ivanov</td>
+                    <td class="date-taken" data-label="Дата получения">20.03.24</td>
+                    <td class="start-time" data-label="Время получения">12:00</td>
+                    <td class="date-return" data-label="Дата возврата">24.04.24</td>
+                    <td class="finish-time" data-label="Время возврата">16:00</td>
+                    <td data-label="Вернул"><input class="checkbox" type="checkbox" name="#" value="yes"></td>
                   </tr>
                   <tr>
-                    <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
-                    <td>Petrov</td>
-                    <td class="date-taken">25.04.24</td>
-                    <td class="start-time">9:00</td>
-                    <td class="date-return">27.04.24</td>
-                    <td class="finish-time">12:00</td>
-                    <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
+                    <td data-label="Взял"><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
+                    <td data-label="Имя">Petrov</td>
+                    <td class="date-taken" data-label="Дата получения">25.04.24</td>
+                    <td class="start-time" data-label="Время получения">9:00</td>
+                    <td class="date-return" data-label="Дата возврата">27.04.24</td>
+                    <td class="finish-time" data-label="Время возврата">12:00</td>
+                    <td data-label="Вернул"><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
                   </tr>
                   <tr>
-                    <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
-                    <td>Sidorov</td>
-                    <td class="date-taken">01.05.24</td>
-                    <td class="start-time">9:00</td>
-                    <td class="date-return">03.05.24</td>
-                    <td class="finish-time">13:00</td>
-                    <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
+                    <td data-label="Взял"><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
+                    <td data-label="Имя">Sidorov</td>
+                    <td class="date-taken" data-label="Дата получения">01.05.24</td>
+                    <td class="start-time" data-label="Время получения">9:00</td>
+                    <td class="date-return" data-label="Дата возврата">03.05.24</td>
+                    <td class="finish-time" data-label="Время возврата">13:00</td>
+                    <td data-label="Вернул"><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
+          <!-- Форма для резервирования механизмов -->
+          @@include("../html-parts/_reservation-form.html")
         </div>
-
       </div>
     </div>
   </div>

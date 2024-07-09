@@ -16,161 +16,161 @@
 
 // Изменяет скрол.
 html::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 html::-webkit-scrollbar-track {
-    background: rgb(249, 246, 246);
-    border: 1px solid transparent;
-    background-clip: content-box;
+  background: rgb(249, 246, 246);
+  border: 1px solid transparent;
+  background-clip: content-box;
 }
 
 html::-webkit-scrollbar-thumb {
-    background: rgb(133, 133, 134);
-    border: 1px solid rgb(0, 0, 0);
+  background: rgb(133, 133, 134);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 // ----------------------------------------------------
 body {
-    font-family: Raleway;
-    min-height: 100vh;
-    min-width: 100%;
+  font-family: Raleway;
+  min-height: 100vh;
+  min-width: 100%;
 }
 
 .section,
 .footer {
-    max-width: 1800px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .wrapper-container {
-    width: 100%;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contents {
-    width: 100%;
-    min-height: 100vh;
-    font-size: 30px;
-    font-weight: 600;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding: 2px;
+  margin-bottom: 2px;
+  background: url(../img/bg/honeycomb-1920.webp);
+  background-color: rgba(218, 218, 97, 0.549);
+  background-blend-mode: screen;
+
+  &__title {
     text-align: center;
-    padding: 2px;
-    margin-bottom: 2px;
-    background: url(../img/bg/honeycomb-1920.webp);
-    background-color: rgba(218, 218, 97, 0.549);
-    background-blend-mode: screen;
+    margin: 20px 5px 50px 5px;
 
-    &__title {
-        text-align: center;
-        margin: 20px 5px 50px 5px;
-
-        h2 {
-            font-size: clamp(25px, 8vw, 45px);
-            font-style: italic;
-            text-transform: uppercase;
-            font-weight: 600;
-            letter-spacing: 2px;
-            word-spacing: 10px;
-            color: #313106;
-        }
+    h2 {
+      font-size: clamp(25px, 8vw, 45px);
+      font-style: italic;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+      word-spacing: 10px;
+      color: #313106;
     }
+  }
 
-    &__carts-block {
-        .cart {
-            display: flex;
-            flex-wrap: wrap;
-            border-radius: 20px;
-            background-color: rgb(201, 199, 196);
-            margin: 20px 15px 30px 15px;
+  &__carts-block {
+    .cart {
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 20px;
+      background-color: rgb(201, 199, 196);
+      margin: 20px 15px 30px 15px;
 
-            .img-block {
-                flex: 1 1 22%;
-                padding: 30px 15px;
+      .img-block {
+        flex: 1 1 22%;
+        padding: 30px 15px;
 
-                .img-wraper {
-                    display: inline;
-                    position: relative;
-                    top: 0;
-                    left: 0;
+        .img-wraper {
+          display: inline;
+          position: relative;
+          top: 0;
+          left: 0;
 
-                    img {
-                        width: 160px;
-                    }
+          img {
+            width: 160px;
+          }
 
-                    .month,
-                    .date {
-                        position: absolute;
-                        color: rgb(6, 161, 16);
-                    }
-                    
-                    .month {
-                        top: 45px;
-                        left: 0px;
-                        font-size: 30px;
-                        width: 100%;
-                    }
+          .month,
+          .date {
+            position: absolute;
+            color: rgb(6, 161, 16);
+          }
 
-                    .date {
-                        top: 95px;
-                        left: 0px;
-                        font-size: 40px;
-                        width: 100%;
-                    }
-                }
-            }
+          .month {
+            top: 45px;
+            left: 0px;
+            font-size: 30px;
+            width: 100%;
+          }
 
-            .text-block {
-                flex: 1 1 70%;
-
-                .title {
-                    font-size: 30px;
-                    font-style: italic;
-                    font-weight: 500;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                    word-spacing: 10px;
-                    color: #313106;
-                    padding: 20px 15px 30px 15px;
-                }
-
-                .text {
-                    width: 100%;
-                    font-size: 24px;
-                    font-weight: 500;
-                    line-height: 25px;
-                    text-align: start;
-                    max-width: 600px;
-                    padding: 0px 20px 30px 20px;
-                    margin: auto;
-                }
-            }
+          .date {
+            top: 95px;
+            left: 0px;
+            font-size: 40px;
+            width: 100%;
+          }
         }
+      }
+
+      .text-block {
+        flex: 1 1 70%;
+
+        .title {
+          font-size: 30px;
+          font-style: italic;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          word-spacing: 10px;
+          color: #313106;
+          padding: 20px 15px 30px 15px;
+        }
+
+        .text {
+          width: 100%;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 25px;
+          text-align: start;
+          max-width: 600px;
+          padding: 0px 20px 30px 20px;
+          margin: auto;
+        }
+      }
     }
+  }
 }
 
 .button-block-all {
-    width: 100%;
-    // margin: auto;
-    padding: 20px;
+  width: 100%;
+  // margin: auto;
+  padding: 20px;
 
-    .button-a {
-        display: inline-block;
-        color: #373827;
-        font-style: italic;
-        text-shadow: 2px 2px 5px rgb(115, 113, 113);
-        border-radius: 20px;
-        padding: 20px 10px;
-        background-color: bisque;
-        transition: all 0.3s ease;
-    }
+  .button-a {
+    display: inline-block;
+    color: #373827;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgb(115, 113, 113);
+    border-radius: 20px;
+    padding: 20px 10px;
+    background-color: bisque;
+    transition: all 0.3s ease;
+  }
 
-    .button-a:hover {
-        color: aqua;
-        text-shadow: 2px 2px 5px rgb(160, 156, 156);
-        background-color: rgb(120, 113, 104);
-    }
+  .button-a:hover {
+    color: aqua;
+    text-shadow: 2px 2px 5px rgb(160, 156, 156);
+    background-color: rgb(120, 113, 104);
+  }
 }
