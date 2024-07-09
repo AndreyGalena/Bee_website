@@ -18,7 +18,7 @@
             <div class="table-block">
               <table class="table">
                 <caption class="reservation-title">
-                  Кто взял трактор.
+                  Кто взял Трактор.
                 </caption>
                 <thead>
                   <tr>
@@ -35,12 +35,8 @@
                   <tr>
                     <td><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
                     <td>Ivanov</td>
-                    <td class="date-taken">
-                      <input type="date" class="textinput-start" />
-                    </td>
-                    <td class="start-time">
-                      <input type="time" class="textinput-start" />
-                    </td>
+                    <td class="date-taken">15.04.24</td>
+                    <td class="start-time">12:00</td>
                     <td class="date-return">24.04.24</td>
                     <td class="finish-time">16:00</td>
                     <td><input class="checkbox" type="checkbox" name="#" value="yes"></td>
@@ -67,8 +63,73 @@
               </table>
             </div>
           </div>
+          <div class="reservation-form-block">
+            <div class="text-form-reservation">
+              <p class="text-form-title">
+                Если вы хотите зарезервировать механизм
+                заполните пожалуста форму.
+              </p>
+              <p class="form-instructions">1.Ваше Имя.</p>
+              <p class="form-instructions green">2.Дату когда вы хотите взять механизм.</p>
+              <p class="form-instructions green">3.Время когда вы хотите взять механизм.</p>
+              <p class="form-instructions red">4.Дату когда вы хотите вернуть механизм.</p>
+              <p class="form-instructions red">5.Время когда вы хотите вернуть механизм.</p>
+              </p>
+            </div>
+            <div class="input-block">
+              <form class="form" method="post" action="">
+                  <!-- Name -->
+                  <div class="row">
+                      <div class="col-25">
+                          <label for="name">Ihr Name</label>
+                      </div>
+                      <div class="col-75">
+                          <input type="text" id="name" name="name" placeholder="Ihr Name.." required tabindex="1">
+                      </div>
+                  </div>
+                  <!-- Data-start -->
+                  <div class="row">
+                    <div class="col-25">
+                        <label for="date">Data start</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="start-date" name="start-date" class="textinput-start" required tabindex="2"/>
+                    </div>
+                  </div>
+                  <!-- Time-start -->
+                  <div class="row">
+                    <div class="col-25">
+                        <label for="time">Time start</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="time" id="start-time" name="start-time" class="textinput-start" required tabindex="3"/>
+                    </div>
+                  </div>
+                  <!-- Data finish -->
+                  <div class="row">
+                    <div class="col-25">
+                        <label for="date">Data finish</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="finish-date" name="finish-date" class="textinput-start" required tabindex="4"/>
+                    </div>
+                  </div>
+                  <!-- Time finish -->
+                  <div class="row">
+                    <div class="col-25">
+                        <label for="time">Time finish</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="time" id="finish-time" name="finish-time" class="textinput-start" required tabindex="5"/>
+                    </div>
+                  </div>
+                  <div class="row-button">
+                      <input type="submit" value="Einreichen" tabindex="6">
+                  </div>
+              </form>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
   </div>

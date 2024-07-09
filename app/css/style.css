@@ -894,6 +894,40 @@ tbody {
   color: red;
 }
 
+.reservation-form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text-form-reservation {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px 15px;
+  margin-top: clamp(20px, 4vh, 50px);
+  background-color: rgba(218, 218, 218, 0.7);
+}
+.text-form-reservation .text-form-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+  color: rgb(7, 7, 7);
+  padding: 0px 10px 20px 10px;
+}
+.text-form-reservation .form-instructions {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 10px;
+}
+.text-form-reservation .green {
+  color: green;
+}
+.text-form-reservation .red {
+  color: red;
+}
+
 .footer {
   background-color: aquamarine;
 }
