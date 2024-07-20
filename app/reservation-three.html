@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -112,18 +112,6 @@
                     </li>
                 </ul>
             </li>
-            <!-- <li>
-                <a href="./scales.html">
-                    <img class="icon-menu" src="../../img/icon-nav-menu/icon-weight-scale.png" alt="image-gallery">
-                    <h3>Unsere Waage</h3>
-                </a>
-            </li> -->
-            <!-- <li>
-                <a href="./web-camera.html">
-                    <img class="icon-menu" src="../../img/icon-nav-menu/icon-camera.png" alt="camera">
-                    <h3>Live-Web camera</h3>
-                </a>
-            </li> -->
         </ul>
     </nav>
     <!--  -->
@@ -143,52 +131,44 @@
         <!--  -->
         <div class="contents">
           <div class="contents__title">
-            <h2>Бронь аппаратуры</h2>
+            <h2>RESERVIERUNG DER AUSRÜSTUNG</h2>
           </div>
           <div class="reservation">
             <div class="table-block">
               <table class="table">
                 <caption class="reservation-title">
-                  Кто взял Лопату.
+                  Wer hat die Schaufel genommen?
                 </caption>
                 <thead>
                   <tr>
-                    <th><label for="chec">Взял</label></th>
-                    <th>Имя</th>
-                    <th>Дата получения</th>
-                    <th>Время получения</th>
-                    <th>Дата возврата</th>
-                    <th>Время возврата</th>
-                    <th>Вернул</th>
+                    <th>Name</th>
+                    <th>Datum des Empfangs</th>
+                    <th>Empfangszeit</th>
+                    <th>Rückflugdatum</th>
+                    <th>Zeit zurück drehen</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td data-label="Взял"><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
-                    <td data-label="Имя">Ivanov</td>
-                    <td class="date-taken" data-label="Дата получения">20.03.24</td>
-                    <td class="start-time" data-label="Время получения">12:00</td>
-                    <td class="date-return" data-label="Дата возврата">24.04.24</td>
-                    <td class="finish-time" data-label="Время возврата">16:00</td>
-                    <td data-label="Вернул"><input class="checkbox" type="checkbox" name="#" value="yes"></td>
+                    <td data-label="Name">Ivanov</td>
+                    <td class="date-taken" data-label="Datum des Empfangs">20.03.24</td>
+                    <td class="start-time" data-label="Empfangszeit">12:00</td>
+                    <td class="date-return" data-label="Rückflugdatum">24.04.24</td>
+                    <td class="finish-time" data-label="Zeit zurück drehen">16:00</td>
                   </tr>
                   <tr>
-                    <td data-label="Взял"><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
                     <td data-label="Имя">Petrov</td>
                     <td class="date-taken" data-label="Дата получения">25.04.24</td>
                     <td class="start-time" data-label="Время получения">9:00</td>
                     <td class="date-return" data-label="Дата возврата">27.04.24</td>
                     <td class="finish-time" data-label="Время возврата">12:00</td>
-                    <td data-label="Вернул"><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
                   </tr>
                   <tr>
-                    <td data-label="Взял"><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
                     <td data-label="Имя">Sidorov</td>
                     <td class="date-taken" data-label="Дата получения">01.05.24</td>
                     <td class="start-time" data-label="Время получения">9:00</td>
                     <td class="date-return" data-label="Дата возврата">03.05.24</td>
                     <td class="finish-time" data-label="Время возврата">13:00</td>
-                    <td data-label="Вернул"><input class="checkbox" type="checkbox" name="chec" value="yes"></td>
                   </tr>
                 </tbody>
               </table>
@@ -199,14 +179,14 @@
 <div class="reservation-form-block">
     <div class="text-form-reservation">
       <p class="text-form-title">
-        Если вы хотите зарезервировать механизм
-        заполните пожалуста форму.
+        Wenn Sie einen Mechanismus reservieren möchten, 
+        füllen Sie bitte das Formular aus.
       </p>
-      <p class="form-instructions">1.Ваше Имя.</p>
-      <p class="form-instructions green">2.Дату когда вы хотите взять механизм.</p>
-      <p class="form-instructions green">3.Время когда вы хотите взять механизм.</p>
-      <p class="form-instructions red">4.Дату когда вы хотите вернуть механизм.</p>
-      <p class="form-instructions red">5.Время когда вы хотите вернуть механизм.</p>
+      <p class="form-instructions"><span>1.</span>Ihr Name.</p>
+      <p class="form-instructions green"><span>2.</span>Datum, an dem Sie den Mechanismus abholen möchten.</p>
+      <p class="form-instructions green"><span>3.</span>Zeit, wenn Sie die Ausrüstung mitnehmen möchten.</p>
+      <p class="form-instructions red"><span>4.</span>Datum, an dem Sie den Mechanismus zurückgeben möchten.</p>
+      <p class="form-instructions red"><span>5.</span>Zeitpunkt, zu dem Sie den Mechanismus zurückgeben möchten.</p>
       </p>
     </div>
     <div class="input-block">
@@ -223,16 +203,16 @@
           <!-- Data-start -->
           <div class="row">
             <div class="col-25">
-                <label for="date">Data start</label>
+                <label for="date">Startdatum</label>
             </div>
             <div class="col-75">
-                <input type="date" id="start-date" name="start-date" class="textinput-start" required tabindex="2"/>
+                <input lang="de" type="date" id="start-date" name="start-date" class="textinput-start" required tabindex="2"/>
             </div>
           </div>
           <!-- Time-start -->
           <div class="row">
             <div class="col-25">
-                <label for="time">Time start</label>
+                <label for="time">Startzeit</label>
             </div>
             <div class="col-75">
                 <input type="time" id="start-time" name="start-time" class="textinput-start" required tabindex="3"/>
@@ -241,7 +221,7 @@
           <!-- Data finish -->
           <div class="row">
             <div class="col-25">
-                <label for="date">Data finish</label>
+                <label for="date">Verfallsdatum</label>
             </div>
             <div class="col-75">
                 <input type="date" id="finish-date" name="finish-date" class="textinput-start" required tabindex="4"/>
@@ -250,7 +230,7 @@
           <!-- Time finish -->
           <div class="row">
             <div class="col-25">
-                <label for="time">Time finish</label>
+                <label for="time">Endzeit</label>
             </div>
             <div class="col-75">
                 <input type="time" id="finish-time" name="finish-time" class="textinput-start" required tabindex="5"/>

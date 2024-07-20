@@ -1,6 +1,3 @@
-// console.log(screen.width);
-// console.log(screen.height);
-
 function fotoGallery(item) {
     // Проверка на существования этого класса в элементе.
     if (item.classList.contains("box")) {

@@ -604,7 +604,7 @@ tbody {
 .input-block .form .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 0px;
+  margin: 10px 5px;
 }
 .input-block .form .row .col-25 {
   flex: 0 1 100px;
@@ -628,6 +628,7 @@ tbody {
   min-width: 100%;
   border-radius: 5px;
   padding: 3px 5px;
+  margin-left: 10px;
   box-sizing: border-box;
   border: 1px solid rgb(110, 108, 108);
   background-color: rgb(237, 237, 243);
@@ -915,9 +916,10 @@ tbody {
   padding: 0px 10px 20px 10px;
 }
 .text-form-reservation .form-instructions {
+  display: flex;
   font-size: 25px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 30px;
   padding: 10px;
 }
 .text-form-reservation .green {

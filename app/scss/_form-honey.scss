@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    // min-height: 100vh;
     padding: clamp(20px, 4vh, 50px) 10px clamp(20px, 4vh, 50px) 10px;
     .form {
         flex: 1 1 600px;
@@ -15,7 +14,7 @@
         .row {
             display: flex;
             flex-wrap: wrap;
-            margin: 10px 0px;
+            margin: 10px 5px;
             .col-25 {
                 flex: 0 1 100px;
                 display: flex;
@@ -37,6 +36,7 @@
                     min-width: 100%;
                     border-radius: 5px;
                     padding: 3px 5px;
+                    margin-left: 10px;
                     box-sizing: border-box;
                     border: 1px solid rgb(110, 108, 108);
                     background-color: rgb(237, 237, 243);
