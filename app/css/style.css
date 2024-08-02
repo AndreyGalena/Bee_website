@@ -330,6 +330,53 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
 }
+.main__content-block .block-article-form {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 10px 40px;
+}
+.main__content-block .block-article-form .categories .category-select {
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid rgb(87, 87, 87);
+  padding: 5px 10px;
+  background-color: #f1f2f1;
+  cursor: pointer;
+}
+.main__content-block .block-article-form .categories .category-select:hover {
+  box-shadow: 2px 2px 10px black;
+}
+.main__content-block .block-article-form .categories .category-button {
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px solid rgb(87, 87, 87);
+  background-color: #c2c2c1;
+  padding: 5px 10px;
+}
+.main__content-block .block-article-form .categories .category-button:hover {
+  border: 2px solid rgb(45, 43, 43);
+  box-shadow: 2px 2px 10px rgb(57, 55, 55);
+  background-color: #fbfbfb;
+}
+.main__content-block .block-article-form .form-search {
+  border: 2px solid rgb(87, 87, 87);
+  border-radius: 5px;
+  background-color: #ebede0;
+}
+.main__content-block .block-article-form .form-search .input-search-img {
+  width: 35px;
+  height: 35px;
+}
+.main__content-block .block-article-form .form-search .input-search {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main__content-block .block-article-form .form-search:hover {
+  box-shadow: 2px 2px 10px black;
+}
 .main__content-block .contents .article-block {
   border-radius: 10px;
   overflow: hidden;
@@ -398,6 +445,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   100% {
     opacity: 0.2;
+  }
+}
+@media screen and (max-width: 708px) {
+  .form-search {
+    margin: 30px 10px 0px 10px;
   }
 }
 .main__nav-menu .button-block {
@@ -927,6 +979,18 @@ tbody {
 }
 .text-form-reservation .red {
   color: red;
+}
+
+.block-article-text {
+  max-width: 1000px;
+  margin: 10px auto;
+}
+.block-article-text .article-text {
+  font-size: clamp(15px, 4vw, 20px);
+  line-height: 21px;
+  font-weight: 500;
+  text-align: start;
+  padding: 5px 10px;
 }
 
 .footer {

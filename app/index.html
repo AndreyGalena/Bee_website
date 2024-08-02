@@ -149,12 +149,32 @@
                     <div class="item-block">
                         <img src="../../img/slider/flowers-nature_min.webp" alt="foto">
                     </div>
-                    
+
                     <a class="previous" onclick="previousSlide()">&#10094;</a>
                     <a class="next" onclick="nextSlide()">&#10095;</a>
                 </div>
                 <!--  -->
                 <div class="contents">
+                    <div class="block-article-form">
+                        <form class="categories" action="category-select" method="post">
+                            <!-- Заголовок поля -->
+                            <label for="category">Kategorien</label>
+                            <!-- Выпадающее поле -->
+                            <select class="category-select" name="category" id="category" required>
+                                <option value="">Alle Kategorien</option>
+                                <option value="1">Bienen züchten</option>
+                                <option value="2">Bau von Bienenstöcken</option>
+                                <option value="3">Honig zubereiten</option>
+                            </select>
+                            <button class="category-button" type="submit" autofocus>OK</button>
+                        </form>
+                        <form class="form-search" action="search-query" method="get">
+                            <label for="search-query">
+                                <img class="input-search-img" src="../../img/icon/pngegg.png" alt="pngegg">
+                            </label>
+                            <input class="input-search" type="search" name="search" id="search-query" required spellcheck>
+                        </form>
+                    </div>
                     <!-- 1 -->
                     <div class="article-block">
                         <div class="category-date-block">
@@ -165,7 +185,7 @@
                             <div class="data-block">
                                 <span class="title">Datum: </span>
                                 <span class="date">17-01-2024</span>
-                                <span class="time">06:27:20</span> 
+                                <span class="time">06:27:20</span>
                             </div>
                         </div>
                         <div class="content-block">
@@ -175,13 +195,13 @@
                             <div class="text-block">
                                 <h2 class="title">Bienenzucht auf dem Feld</h2>
                                 <p class="text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Voluptate veritatis dolores alias tenetur eligendi optio odio, 
-                                    porro nemo sunt. Quasi soluta similique reiciendis pariatur? 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Voluptate veritatis dolores alias tenetur eligendi optio odio,
+                                    porro nemo sunt. Quasi soluta similique reiciendis pariatur?
                                     A itaque rem odit sequi eaque.....
                                 </p>
                                 <div class="button-block-all">
-                                    <a class="button-a" href="#">Vollständig lesen</a>
+                                    <a class="button-a" href="./article.html">Vollständig lesen</a>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +216,7 @@
                             <div class="data-block">
                                 <span class="title">Datum: </span>
                                 <span class="date">22-10-2023</span>
-                                <span class="time">06:27:20</span> 
+                                <span class="time">06:27:20</span>
                             </div>
                         </div>
                         <div class="content-block">
@@ -206,13 +226,13 @@
                             <div class="text-block">
                                 <h2 class="title">So sammeln Sie Honig</h2>
                                 <p class="text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Voluptate veritatis dolores alias tenetur eligendi optio odio, 
-                                    porro nemo sunt. Quasi soluta similique reiciendis pariatur? 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Voluptate veritatis dolores alias tenetur eligendi optio odio,
+                                    porro nemo sunt. Quasi soluta similique reiciendis pariatur?
                                     A itaque rem odit sequi eaque.....
                                 </p>
                                 <div class="button-block-all">
-                                    <a class="button-a" href="#">Vollständig lesen</a>
+                                    <a class="button-a" href="./article.html">Vollständig lesen</a>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +247,7 @@
                             <div class="data-block">
                                 <span class="title">Дата: </span>
                                 <span class="date">1-05-2023</span>
-                                <span class="time">22:27:20</span> 
+                                <span class="time">22:27:20</span>
                             </div>
                         </div>
                         <div class="content-block">
@@ -237,13 +257,13 @@
                             <div class="text-block">
                                 <h2 class="title">Строим улья</h2>
                                 <p class="text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Voluptate veritatis dolores alias tenetur eligendi optio odio, 
-                                    porro nemo sunt. Quasi soluta similique reiciendis pariatur? 
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Voluptate veritatis dolores alias tenetur eligendi optio odio,
+                                    porro nemo sunt. Quasi soluta similique reiciendis pariatur?
                                     A itaque rem odit sequi eaque.....
                                 </p>
                                 <div class="button-block-all">
-                                    <a class="button-a" href="#">Читать полностью</a>
+                                    <a class="button-a" href="./article.html">Читать полностью</a>
                                 </div>
                             </div>
                         </div>
