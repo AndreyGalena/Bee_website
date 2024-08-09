@@ -920,15 +920,12 @@ tbody {
   padding: 10px 5px;
 }
 
-.checkbox {
-  width: 20px;
-  height: 20px;
-}
-
-.date-taken, .start-time {
+.date-taken,
+.start-time {
   color: green;
 }
-.date-taken .textinput-start, .start-time .textinput-start {
+.date-taken .textinput-start,
+.start-time .textinput-start {
   font-size: 25px;
   color: green;
   background-color: rgb(225, 220, 220);
@@ -993,6 +990,62 @@ tbody {
   padding: 5px 10px;
 }
 
+.events-tabele-block {
+  display: flex;
+  justify-content: center;
+  margin: 0px 5px 0px 5px;
+}
+.events-tabele-block .table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid rgb(200, 200, 200);
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+.events-tabele-block .table .events-title {
+  font-size: 20px;
+}
+.events-tabele-block .table .events-item {
+  font-size: 20px;
+}
+.events-tabele-block .table .events-item .events-date {
+  text-align: left;
+  color: green;
+}
+.events-tabele-block .table .events-item .events-name {
+  font-size: 22px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: left;
+  color: #080507;
+}
+.events-tabele-block .table .events-item .events-text {
+  text-align: left;
+}
+.events-tabele-block .table tr th,
+.events-tabele-block .table tr td {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 10px 20px;
+}
+.events-tabele-block .table tr td {
+  position: relative;
+  text-align: center;
+}
+.events-tabele-block .table tr .name-table {
+  font-style: italic;
+}
+.events-tabele-block .table tr .email-table {
+  color: blue;
+}
+
+@media (max-width: 1050px) {
+  .events-tabele-block {
+    display: none;
+  }
+  .contents__carts-block {
+    display: block !important;
+  }
+}
 .footer {
   background-color: aquamarine;
 }
@@ -1065,6 +1118,9 @@ body {
   letter-spacing: 2px;
   word-spacing: 10px;
   color: #313106;
+}
+.contents__carts-block {
+  display: none;
 }
 .contents__carts-block .cart {
   display: flex;
