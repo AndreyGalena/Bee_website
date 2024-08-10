@@ -1172,7 +1172,7 @@ input[name=tabs] {
   color: #33d3fe;
 }
 
-button {
+.tab-form button {
   display: block;
   width: 100%;
 }
