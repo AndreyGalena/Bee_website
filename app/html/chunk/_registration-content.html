@@ -1,3 +1,4 @@
+<!-- Форма Регистрация/Авторизация -->
 <section class="section">
     <div class="wrapper-container">
         <div class="main">
@@ -6,49 +7,52 @@
                 <!--  -->
                 <div class="bg-start-block">
                     <div class="item-block">
-                        <img src="../../img/login-form/log-in_1920.webp" alt="foto">
+                        <img src="../../img/login-form/pexels-pixabay.webp" alt="foto">
                     </div>
                 </div>
                 <!--  -->
                 <div class="contents">
                     <div class="contents__title">
-                        <h2>Anmeldung</h2>
+                        <h2>Anmeldung & Eingang</h2>
                     </div>
                     <!-- Form -->
-                    <div class="input-block">
-                        <form class="form" method="post" action="">
-                            <!-- Name -->
-                            <div class="row">
-                                <div class="col-25">
-                                    <label for="name">Ihr Name</label>
+                    <div class="dws-wrapper">
+                        <div class="dws-form">
+                            <!-- Вкладки на CSS -->
+                            <input type="radio" id="tab-1" name="tabs" checked>
+                            <label class="tab" for="tab-1" title="Вкладка 1">Eingang</label>
+                
+                            <input type="radio" name="tabs" id="tab-2">
+                            <label class="tab" for="tab-2" title="Вкладка 2">Anmeldung</label>
+                            <!-- Авторизация -->
+                            <form action="authorization" method="post" id="form-1" class="tab-form">
+                                <div class="box-input">
+                                    <input id="email-av" class="input" type="email" name="email-av" required>
+                                    <label for="email-av">Ihre E-Mail</label>
                                 </div>
-                                <div class="col-75">
-                                    <input type="text" id="name" name="name" placeholder="Ihr Name.." required tabindex="1">
+                                <div class="box-input">
+                                    <input id="password-av" class="input" type="password" name="password-av" required>
+                                    <label for="password-av">Ihr Passwort</label>
                                 </div>
-                            </div>
-                            <!-- Email -->
-                            <div class="row">
-                                <div class="col-25">
-                                    <label for="email">E-Mail</label>
+                                 <button type="submit" class="button">Login</button>
+                            </form>
+                            <!-- Регистрация -->
+                            <form action="registration" method="post" id="form-2" class="tab-form" name="">
+                                <div class="box-input">
+                                    <input id="email-reg" class="input" type="email" name="email-reg" required>
+                                    <label for="email-reg">Ihre E-Mail</label>
                                 </div>
-                                <div class="col-75">
-                                    <input type="email" id="email" name="email" placeholder="Deine E-Mail.." 
-                                    aria-describedby="emailHelp" required tabindex="3">
+                                <div class="box-input">
+                                    <input id="name-reg" class="input" type="text" name="name-reg" required>
+                                    <label for="name-reg">Ihr Name</label>
                                 </div>
-                            </div>
-                            <!-- Password -->
-                            <div class="row">
-                                <div class="col-25">
-                                    <label for="password">Passwort</label>
+                                <div class="box-input">
+                                    <input id="password-reg" class="input" type="password" name="password-reg" required>
+                                    <label for="password-reg">Ihr Passwort</label>
                                 </div>
-                                <div class="col-75">
-                                    <input type="password" id="password" name="password" placeholder="Deine Passwort.." required tabindex="2">
-                                </div>
-                            </div>
-                            <div class="row-button">
-                                <input type="submit" value="Einreichen" tabindex="4">
-                            </div>
-                        </form>
+                                <button type="submit" class="button">Anmeldung</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

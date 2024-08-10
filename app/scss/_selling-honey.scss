@@ -1,3 +1,4 @@
+// таблица продажи мёда.
 thead {
   background-color: #b3afaf;
 }
@@ -47,7 +48,7 @@ tbody {
     }
   }
 }
-
+// перестраение при уменьшении экрана.
 @media screen and (max-width: 1050px) {
   .table {
     border-radius: 20px;
