@@ -1,0 +1,56 @@
+.contacts-block {
+
+  .contacts-content {
+    margin: 0 auto;
+    max-width: 700px;
+    min-height: 500px;
+    background-color: rgb(241, 243, 243, 0.7);
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .address-block {
+      margin: clamp(20px, 7vw, 50px) 15px clamp(20px, 7vw, 70px);
+
+      .name-company {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: clamp(20px, 7vw, 40px);
+
+        .logo-contact {
+          width: 40px;
+          height: 40px;
+        }
+
+        span {
+          font-size: 35px;
+          font-weight: 500;
+          color: #c08022;
+        }
+      }
+
+      .address,
+      .name-city {
+        font-size: 25px;
+        font-weight: 500;
+        color: #190a0a;
+        margin-bottom: 15px;
+      }
+
+      .mail {
+        font-size: 20px;
+        font-weight: 500;
+        color: #2c4db3;
+        margin: 25px 0px 15px;
+      }
+
+      .phone {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
