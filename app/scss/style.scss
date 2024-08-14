@@ -104,23 +104,23 @@ body {
             width: 160px;
           }
 
-          .month,
-          .date {
+          .dateMonth,
+          .year {
             position: absolute;
             color: rgb(6, 161, 16);
           }
 
-          .month {
+          .dateMonth {
             top: 45px;
             left: 0px;
-            font-size: 30px;
+            font-size: 22px;
             width: 100%;
           }
 
-          .date {
+          .year {
             top: 95px;
             left: 0px;
-            font-size: 40px;
+            font-size: 30px;
             width: 100%;
           }
         }
