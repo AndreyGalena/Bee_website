@@ -4,7 +4,7 @@ thead {
 }
 
 tbody {
-  font-size: clamp(20px, 4vw, 30px);
+  font-size: clamp(18px, 4vw, 22px);
   font-weight: 400;
   background-color: rgb(225, 220, 220);
 }
@@ -19,7 +19,7 @@ tbody {
     border-collapse: collapse;
     border: 2px solid rgb(200, 200, 200);
     letter-spacing: 1px;
-    font-size: 2rem;
+    font-size: 25px;
 
     tr {
 

@@ -4,7 +4,6 @@ function fotoGallery(item) {
         // если "box" а не "box-active"
         // заменяет существующий класс на новый класс.
         item.classList.replace("box", "box-active");
-
     } else  {
         // если не "box" а "box-active"
         // заменяет существующий класс на новый класс.
