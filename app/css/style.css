@@ -556,6 +556,11 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1, 1);
   }
 }
+.form-error {
+  font-size: 20px;
+  color: red;
+}
+
 thead {
   background-color: #b3afaf;
 }
@@ -1182,7 +1187,7 @@ input[name=tabs] {
   pointer-events: none;
 }
 
-.box-input input:focus ~ label,
+.box-input .input:focus ~ label,
 .box-input input:valid ~ label {
   top: -20px;
   font-size: 12px;
