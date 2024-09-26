@@ -1,4 +1,12 @@
-// форма продажи мёда.
+// Общие стили для form (стили ошибок и т.д)
+
+.non-form-error, 
+.form-error{
+    font-size: 20px;
+    color: red;
+    padding: 10px;
+}
+
 .input-block {
     display: flex;
     justify-content: center;

@@ -48,7 +48,7 @@
         </header>
     </div>
 </section>
-    <!-- Форма Регистрация/Авторизация -->
+    <!-- Форма для резервирования механизмов -->
 <section class="section">
     <div class="wrapper-container">
         <div class="main">
@@ -127,70 +127,110 @@
                 <!--  -->
                 <div class="bg-start-block">
                     <div class="item-block">
-                        <img src="../../img/login-form/pexels-pixabay.webp" alt="foto">
+                        <img src="../../img/slider/tractor_1920.webp" alt="foto">
                     </div>
                 </div>
                 <!--  -->
                 <div class="contents">
                     <div class="contents__title">
-                        <h2>Anmeldung & Eingang</h2>
+                        <h2>Форма брони аппаратуры</h2>
                     </div>
-                    <!-- Form -->
-                    <div class="dws-wrapper">
-                        <div class="dws-form">
-                            <!-- Вкладки на CSS -->
-                            <input type="radio" id="tab-1" name="tabs" checked>
-                            <label class="tab" for="tab-1" title="Вкладка 1">Eingang</label>
-                
-                            <input type="radio" name="tabs" id="tab-2">
-                            <label class="tab" for="tab-2" title="Вкладка 2">Anmeldung</label>
-
-                            <!-- Авторизация -->
-                            <form action="authorization" method="post" id="form-1" class="tab-form">
+                    <div class="reservation-form-block">
+                        <div class="text-form-reservation">
+                            <p class="text-form-title">
+                                Wenn Sie einen Mechanismus reservieren möchten,
+                                füllen Sie bitte das Formular aus.
+                            </p>
+                            <p class="form-instructions"><span>1.</span>Ihr Name.</p>
+                            <p class="form-instructions green"><span>2.</span>Datum, an dem Sie den Mechanismus abholen
+                                möchten.</p>
+                            <p class="form-instructions green"><span>3.</span>Zeit, wenn Sie die Ausrüstung mitnehmen
+                                möchten.</p>
+                            <p class="form-instructions red"><span>4.</span>Datum, an dem Sie den Mechanismus
+                                zurückgeben möchten.</p>
+                            <p class="form-instructions red"><span>5.</span>Zeitpunkt, zu dem Sie den Mechanismus
+                                zurückgeben möchten.</p>
+                        </div>
+                        <div class="input-block">
+                            <form class="form" method="post" action="">
                                 <!-- {% csrf_token %} -->
-                                <div class="non-form-error">Ошибка не касающаяся формы.</div>
-                                <!-- name -->
-                                <div class="box-input">
-                                    <input id="name-av" class="input" type="text" name="name-av" required>
-                                    <label for="name-av">Ihr Name</label>
-                                    <div class="form-error">Ошибка заполнения формы name</div>
+                                <div class="non-form-error">
+                                    Ошибка не касающаяся формы.
                                 </div>
-                                <!-- password -->
-                                <div class="box-input">
-                                    <input id="password-av" class="input" type="password" name="password-av" required>
-                                    <label for="password-av">Ihr Passwort</label>
-                                    <div class="form-error">Ошибка заполнения формы password</div>
+                                <!-- Name -->
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="name">Ihr Name</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="name" name="name" placeholder="Ihr Name.." required
+                                            tabindex="1">
+                                    </div>
+                                    <div class="form-error">
+                                        Ошибка заполнения формы name
+                                    </div>
                                 </div>
-                                <!-- button -->
-                                 <button type="submit" class="button">Login</button>
-                            </form>
-
-                            <!-- Регистрация -->
-                            <form action="registration" method="post" id="form-2" class="tab-form" name="">
-                                <!-- {% csrf_token %} -->
-                                <div class="non-form-error">Ошибка не касающаяся формы.</div>
-
-                                <div class="box-input">
-                                    <input id="email-reg" class="input" type="email" name="email-reg" required>
-                                    <label for="email-reg">Ihre E-Mail</label>
-                                    <div class="form-error">Ошибка заполнения формы email</div>
+                                <!-- Data-start -->
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="date">Startdatum</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input lang="de" type="date" id="start-date" name="start-date"
+                                            class="textinput-start" required tabindex="2" />
+                                    </div>
+                                    <div class="form-error">
+                                        Ошибка заполнения формы Data-start
+                                    </div>
                                 </div>
-                                <div class="box-input">
-                                    <input id="name-reg" class="input" type="text" name="name-reg" required>
-                                    <label for="name-reg">Ihr Name</label>
-                                    <div class="form-error">Ошибка заполнения формы name</div>
+                                <!-- Time-start -->
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="time">Startzeit</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="time" id="start-time" name="start-time" class="textinput-start" required
+                                            tabindex="3" />
+                                    </div>
+                                    <div class="form-error">
+                                        Ошибка заполнения формы Time-start
+                                    </div>
                                 </div>
-                                <div class="box-input">
-                                    <input id="password-reg" class="input" type="password" name="password-reg" required>
-                                    <label for="password-reg">Ihr Passwort</label>
-                                    <div class="form-error">Ошибка заполнения формы password</div>
+                                <!-- Data finish -->
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="date">Verfallsdatum</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="date" id="finish-date" name="finish-date" class="textinput-start" required
+                                            tabindex="4" />
+                                    </div>
+                                    <div class="form-error">
+                                        Ошибка заполнения формы Data finish
+                                    </div>
                                 </div>
-                                <div class="box-input">
-                                    <input id="password-reg-2" class="input" type="password" name="password-reg-2" required>
-                                    <label for="password-reg-2">Passwort wiederholen</label>
-                                    <div class="form-error">Ошибка заполнения формы password-2</div>
+                                <!-- Time finish -->
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="time">Endzeit</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="time" id="finish-time" name="finish-time" class="textinput-start" required
+                                            tabindex="5" />
+                                    </div>
+                                    <div class="form-error">
+                                        Ошибка заполнения формы Time finish
+                                    </div>
                                 </div>
-                                <button type="submit" class="button">Anmeldung</button>
+                                <!-- Tool -->
+                                <div class="row">
+                                    <div class="col-75">
+                                        <input type="hidden" name="tool_id" value=Лопата>
+                                    </div>
+                                </div>
+                                <div class="row-button">
+                                    <input type="submit" value="Einreichen" tabindex="6">
+                                </div>
                             </form>
                         </div>
                     </div>

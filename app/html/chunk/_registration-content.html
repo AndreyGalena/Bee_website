@@ -24,31 +24,51 @@
                 
                             <input type="radio" name="tabs" id="tab-2">
                             <label class="tab" for="tab-2" title="Вкладка 2">Anmeldung</label>
+
                             <!-- Авторизация -->
                             <form action="authorization" method="post" id="form-1" class="tab-form">
+                                <!-- {% csrf_token %} -->
+                                <div class="non-form-error">Ошибка не касающаяся формы.</div>
+                                <!-- name -->
                                 <div class="box-input">
                                     <input id="name-av" class="input" type="text" name="name-av" required>
                                     <label for="name-av">Ihr Name</label>
+                                    <div class="form-error">Ошибка заполнения формы name</div>
                                 </div>
+                                <!-- password -->
                                 <div class="box-input">
                                     <input id="password-av" class="input" type="password" name="password-av" required>
                                     <label for="password-av">Ihr Passwort</label>
+                                    <div class="form-error">Ошибка заполнения формы password</div>
                                 </div>
+                                <!-- button -->
                                  <button type="submit" class="button">Login</button>
                             </form>
+
                             <!-- Регистрация -->
                             <form action="registration" method="post" id="form-2" class="tab-form" name="">
+                                <!-- {% csrf_token %} -->
+                                <div class="non-form-error">Ошибка не касающаяся формы.</div>
+
                                 <div class="box-input">
                                     <input id="email-reg" class="input" type="email" name="email-reg" required>
                                     <label for="email-reg">Ihre E-Mail</label>
+                                    <div class="form-error">Ошибка заполнения формы email</div>
                                 </div>
                                 <div class="box-input">
                                     <input id="name-reg" class="input" type="text" name="name-reg" required>
                                     <label for="name-reg">Ihr Name</label>
+                                    <div class="form-error">Ошибка заполнения формы name</div>
                                 </div>
                                 <div class="box-input">
                                     <input id="password-reg" class="input" type="password" name="password-reg" required>
                                     <label for="password-reg">Ihr Passwort</label>
+                                    <div class="form-error">Ошибка заполнения формы password</div>
+                                </div>
+                                <div class="box-input">
+                                    <input id="password-reg-2" class="input" type="password" name="password-reg-2" required>
+                                    <label for="password-reg-2">Passwort wiederholen</label>
+                                    <div class="form-error">Ошибка заполнения формы password-2</div>
                                 </div>
                                 <button type="submit" class="button">Anmeldung</button>
                             </form>
