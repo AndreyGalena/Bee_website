@@ -1,4 +1,8 @@
 // Протоколы засиданий
+.contents__protocol-block {
+    padding: 10px;
+}
+
 .item {
     max-width: 800px;
     margin: 5px auto;
@@ -6,7 +10,7 @@
     box-shadow: 0px 0px 5px #000;
     overflow: hidden;
     background-color: #b6b9bc;
-    
+
     .header-item {
         display: flex;
         justify-content: space-between;
@@ -17,23 +21,33 @@
             width: 100%;
             text-align: center;
         }
-        
+
         .drop-down {
             font-size: 20px;
             cursor: pointer;
         }
     }
+
     .content {
         display: flex;
-        padding: 0 10px 10px 0;
-        .text {
+        max-width: 100%;
+
+        // padding: 0 10px 10px 0;
+        .protocol-text {
             flex: 1 1 60%;
-            padding-left: 10px;
+            padding: 10px 15px;
             font-size: 20px;
             line-height: 30px;
             text-align: start;
+            width: 100%;
+            // переносит слова в <pre><\pre>
+            white-space: pre-wrap;
+            // разделяет слово через дефис и переносит.
+            hyphens: auto;
+            overflow: auto;
         }
     }
+
     .hide-content {
         max-height: 0px;
         overflow: hidden;
