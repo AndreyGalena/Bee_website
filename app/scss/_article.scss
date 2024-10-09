@@ -1,13 +1,133 @@
 // страничка статьи.
-.block-article-text {
-    max-width: 1000px;
-    margin: 10px auto;
 
-    .article-text {
-        font-size: clamp(15px, 4vw, 20px);
-        line-height: 21px;
-        font-weight: 500;
+.article-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(208, 218, 217, .5);
+    
+    .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 800px;
+        padding: 0px 10px 30px 10px;
+        
+    
+        &__title {
+            text-align: start;
+
+            .article-title {
+                font-size: clamp(25px, 8vw, 35px);
+                padding: clamp(20px, 8vw, 30px) 0px clamp(30px, 8vw, 50px) 0px;
+            }
+        }
+        &__lead-block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__content-block {
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            border-radius: 10px;
+            box-shadow: 6px 5px 4px rgb(153, 149, 149), -7px -6px 4px rgb(161, 161, 94);
+            background-color: rgba(239, 245, 244, 0.5);
+            padding: 20px 10px 20px clamp(10px, 5vw, 30px);
+            margin: 20px 0px 30px;
+
+            .content-title {
+                font-size: 25px;
+                font-weight: 600;
+                font-style: italic;
+                text-align: start;
+                margin-bottom: 20px;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+
+                .content-li {
+                    font-size: 20px;
+                    text-align: start;
+                    line-height: 1.7;
+                    overflow-wrap: break-word;
+                    cursor: default;
+                    margin-left: 20px;
+                    
+                    a {
+                        color: #111;
+                        transition: color .2s ease;
+                    }
+                }
+
+                .content-li:hover {
+                    a {
+                        color: #f0a816;
+                    }
+                }
+            }
+        }
+
+        &__paragraph-block {
+            max-width: 700px;
+            .paragraph-title-block {
+                text-align: start;
+                .paragraph-title {
+                    font-size: clamp(25px, 8vw, 35px);
+                    padding: clamp(20px, 8vw, 25px) 0px clamp(10px, 8vw, 15px) 0px;
+                }
+            }
+
+            .paragraph-list-block {
+                text-align: start;
+                font-size: 20px;
+                line-height: 30px;
+
+                li {
+                    // вывод кружочков, где.
+                    list-style-type: disc;
+                    list-style-position: outside;
+                    margin-left: clamp(20px, 8vw, 50px);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.title-ul-block {
+    margin: 20px 0px 10px;
+}
+
+.text-block {
+    display: flex;
+    justify-content: start;
+    
+    .paragraph-text {
+        font-size: clamp(18px, 8vw, 20px);;
+        font-weight: 400;
+        line-height: 30px;
         text-align: start;
-        padding: 5px 10px;
+        max-width: 700px;
+        // разделяет слово через дефис и переносит.
+        hyphens: auto;
+        overflow: auto;
+    }
+    
+    .title-ul {
+        font-weight: 600;
+    }
+}
+
+
+.img-block {
+    display: flex;
+    max-width: 700px;
+    margin: 30px 0px 20px;
+    img {
+        width: 100%;
+        object-fit: contain;
     }
 }

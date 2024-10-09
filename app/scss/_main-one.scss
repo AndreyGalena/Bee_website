@@ -209,7 +209,7 @@
                     display: flex;
                     flex-wrap: wrap;
                     .img-block {
-                        flex: 1 1 40%;
+                        flex: 1 1 25%;
                         img {
                             max-width: 300px;
                             min-width: 200px;
@@ -232,6 +232,7 @@
                             line-height: 35px;
                             text-align: start;
                             padding-left: 20px;
+                            padding-right: 10px;
                         }
                     }
                 }
