@@ -10,15 +10,19 @@
         border: 2px solid rgb(200, 200, 200);
         letter-spacing: 1px;
         font-size: 2rem;
+
         .events-title {
             font-size: 20px;
         }
+
         .events-item {
             font-size: 20px;
+
             .events-date {
                 text-align: left;
                 color: green;
             }
+
             .events-name {
                 font-size: 22px;
                 font-weight: 500;
@@ -26,38 +30,123 @@
                 text-align: left;
                 color: #ff2424;
             }
+
             .events-text {
                 text-align: left;
             }
         }
-        tr {
-    
-          th,
-          td {
-            border: 1px solid rgb(190, 190, 190);
-            padding: 10px 20px;
-          }
 
-          td {
-            position: relative;
-            text-align: center;
-          }
-    
-          .name-table {
-            font-style: italic;
-          }
-    
-          .email-table {
-            color: blue;
-          }
+        tr {
+
+            th,
+            td {
+                border: 1px solid rgb(190, 190, 190);
+                padding: 10px 20px;
+            }
+
+            td {
+                position: relative;
+                text-align: center;
+            }
+
+            .name-table {
+                font-style: italic;
+            }
+
+            .email-table {
+                color: blue;
+            }
         }
-      }
+    }
+}
+
+.contents__carts-block {
+    .cart-events {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 20px;
+        background-color: rgb(201, 199, 196);
+        margin: 20px 15px 30px 15px;
+
+        .img-block-events {
+            flex: 1 1 22%;
+
+            display: flex;
+            justify-content: center;
+            padding: 30px 15px;
+
+            .img-wraper {
+                display: inline;
+                position: relative;
+                top: 0;
+                left: 0;
+
+                img {
+                    width: 160px;
+                }
+
+                .dateMonth,
+                .year {
+                    position: absolute;
+                    color: rgb(6, 161, 16);
+                }
+
+                .dateMonth {
+                    top: 45px;
+                    left: 0px;
+                    font-size: 22px;
+                    width: 100%;
+                }
+
+                .year {
+                    top: 95px;
+                    left: 0px;
+                    font-size: 30px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .text-block-events {
+            flex: 1 1 70%;
+
+            .title {
+                font-size: 30px;
+                font-style: italic;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                word-spacing: 10px;
+                // color: #310606;
+                color: #ff2424;
+                padding: 20px 15px 30px 15px;
+            }
+
+            .text {
+                width: 100%;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 25px;
+                text-align: start;
+                max-width: 600px;
+                padding: 0px 20px 30px 20px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1050px) {
+    .contents__carts-block {
+        display: none;
+    }
 }
 
 @media (max-width: 1050px) {
     .events-tabele-block {
         display: none;
     }
+
     .contents__carts-block {
         display: block !important;
     }

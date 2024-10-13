@@ -18,14 +18,14 @@
         display: flex;
         flex-wrap: wrap;
 
-        .img-block {
+        .img-block-history {
             flex: 1 1 400px;
             padding: clamp(5px, 1vw, 20px);
             img {
                 width: 100%;
             }
         }
-        .text {
+        .text-history {
             flex: 1 1 60%;
             font-size: 20px;
             line-height: 25px;
