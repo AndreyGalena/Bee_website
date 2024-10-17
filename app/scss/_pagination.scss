@@ -1,0 +1,61 @@
+// Стили пагинации страниц
+
+.list-pages {
+    .pages-ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 30px;
+
+        .arrow-li {
+            font-size: 60px;
+
+            a {
+                display: block;
+                color: black;
+                margin: 10px 15px;
+                transition: .2s all;
+            }
+            a:hover {
+                color: rgb(243, 247, 245);
+                transform: scale(1.2);
+                text-shadow: 2px 2px 2px #706e6e;
+            }
+            a:active {
+                color: rgb(251, 0, 0);
+            }
+        }
+
+        .pages-li-active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            text-shadow: 2px 2px 2px #dfdfdf;
+            margin: 15px;
+            // не копировать
+            user-select: none;
+        }
+        .pages-li {
+            a {
+                display: block;
+                color: black;
+                border-radius: 10px;
+                background-color: beige;
+                padding: 10px;
+                margin: 15px;
+                transition: .3s all;
+            }
+            a:hover {
+                color: rgb(243, 247, 245);
+                transform: scale(1.2);
+                box-shadow: 2px 2px 5px rgb(247, 243, 243);
+                background-color: rgb(87, 84, 84);
+            }
+            a:active {
+                background-color: rgb(220, 2, 2);
+            }
+        }
+    }
+}
