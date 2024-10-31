@@ -26,7 +26,7 @@ document.body.addEventListener("click", function(e) {
 
     // Работа с popup выпадающим меню.
     popup_run(directСlick);
-
+    
     // Обработка выпадения протоколов.
     if (directСlick.classList.contains("protocol-down")) {
         popup_protocol_down(e, directСlick);
