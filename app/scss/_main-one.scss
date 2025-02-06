@@ -199,6 +199,10 @@
                         .category {
                             color: #45ac49;
                         }
+                        .category-name {
+                            // text-wrap: balance;
+                            overflow-wrap: break-word;
+                        }
                     }
                     .data-block {
                         .title {

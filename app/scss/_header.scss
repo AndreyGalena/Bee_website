@@ -12,8 +12,8 @@
                 padding: 10px;
                 .icon-block__icon {
                     display: flex;
-                    justify-content: space-between;
                     align-items: center;
+                    flex-wrap: wrap;
                     .header-icon {
                         max-width: 64px;
                         filter: drop-shadow(-4px -3px 4px rgb(134, 121, 36));
