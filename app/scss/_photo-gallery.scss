@@ -1,13 +1,53 @@
-// фото галерея.
+// ФОТО ГАЛЕРЕЯ.
+
+// поле поиска
+.search-block {
+	font-size: 25px;
+	border-radius: 5px;
+	margin: 20px auto;
+	padding: 5px 10px;
+	// background-color: #ebede0;
+
+	.form-years {
+		.label-select-year {
+			.input-search-img {
+				width: 25px;
+				height: 25px;
+			}
+		}
+		.select-block {
+			font-size: 19px;
+			border: 2px solid rgb(87, 87, 87);
+			border-radius: 5px;
+			cursor: pointer;
+			margin-right: 20px;
+			transition: .2s all;
+		}
+		.select-block:hover {
+			box-shadow: 2px 2px 10px black;
+			transform: scale(1.1);
+		}
+		.year-button {
+			font-size: 19px;
+			border-radius: 5px;
+			border: 2px solid rgb(87, 87, 87);
+			background-color: #c2c2c1;
+			padding: 1px 10px;
+			transition: .2s all;
+		}
+		.year-button:hover {
+			box-shadow: 2px 2px 10px black;
+			transform: scale(1.1);
+		}
+	}
+}
+
+// галерея
 .gallery-wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 100%;
 	min-height: 100%;
-	// 
-	// display: flex;
-	// flex-direction: column;
-	// justify-content: space-between;
 
 	.gallery {
 		display: flex;

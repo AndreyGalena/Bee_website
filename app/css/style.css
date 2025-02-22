@@ -748,6 +748,41 @@ tbody {
     background-color: #fff;
   }
 }
+.search-block {
+  font-size: 25px;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 5px 10px;
+}
+.search-block .form-years .label-select-year .input-search-img {
+  width: 25px;
+  height: 25px;
+}
+.search-block .form-years .select-block {
+  font-size: 19px;
+  border: 2px solid rgb(87, 87, 87);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: 0.2s all;
+}
+.search-block .form-years .select-block:hover {
+  box-shadow: 2px 2px 10px black;
+  transform: scale(1.1);
+}
+.search-block .form-years .year-button {
+  font-size: 19px;
+  border-radius: 5px;
+  border: 2px solid rgb(87, 87, 87);
+  background-color: #c2c2c1;
+  padding: 1px 10px;
+  transition: 0.2s all;
+}
+.search-block .form-years .year-button:hover {
+  box-shadow: 2px 2px 10px black;
+  transform: scale(1.1);
+}
+
 .gallery-wrapper {
   max-width: 1200px;
   margin: 0 auto;
