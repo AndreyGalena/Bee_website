@@ -6,16 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unser Bienenhaus</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="shortcut icon" href="../img/icon/icon-bee.png" type="image/x-icon">
     <!-- Сылка для иконак Регистрации/Авторизации -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Сылка на страничку иконок -->
     <script src="https://kit.fontawesome.com/0705916eb4.js" crossorigin="anonymous"></script>
+    <!-- Подключение библиотеки SimpleLightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.1/dist/simple-lightbox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.1/dist/simple-lightbox.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="../img/icon/icon-bee.png" type="image/x-icon">
 </head>
 
 <body>
-<!-- Шапка с иконкой и меню home -->
+    <!-- Шапка с иконкой и меню home -->
 <section class="section">
     <div class="wrapper-container">
         <header class="header">
@@ -48,11 +51,11 @@
         </header>
     </div>
 </section>
-<!-- Фото галерея -->
+    <!-- Фото галерея -->
 <section class="section">
     <div class="wrapper-container">
         <div class="main">
-            <div class="main__nav-menu">
+                        <div class="main__nav-menu">
                 <!--  -->
                 <nav class="menu">
                     <ul>
@@ -148,60 +151,63 @@
                         </form>
                     </div>
                     <div class="gallery-wrapper">
-                        <div class="gallery">
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/30020467_XXL.webp" alt="foto"/>
-                                <span class="photo-date">15.04.24</span>
-                                <span class="photo-text">
-                                    Es kann sein, dass hier viel Text steht (das Scrollen funktioniert).
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Architecto laborum nostrum amet necessitatibus voluptatem, repudiandae magnam 
-                                    at labore doloribus inventore molestiae numquam autem minima tempora? 
-                                    Laboriosam corporis nam dolorem laborum?
-                                    End
-                                </span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/30020473_XXL.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text">
-                                    Möglicherweise gibt es eine Beschreibung, die jedoch nicht erforderlich ist.
-                                </span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/30020482_XXL.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text"></span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/30020494_XXL.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text">Beschreibung</span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/35046863_L.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text">Beschreibung</span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/IMG_4273.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text">Beschreibung</span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/Imkerfest2022.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text">
-                                    Тут может быть какое то описание, но это не обязательно.
-                                </span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/Imkerfest2022-2.webp" alt="foto"/>
-                                <span class="photo-date"></span>
-                                <span class="photo-text"></span>
-                            </div>
-                        </div>
-                    <nav class="list-pages">
+                        <ul class="gallery">
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/30020473_XXL.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/30020473_XXL.webp"
+                                        data-source="../../img/Photo_gallery/30020473_XXL.webp"
+                                        alt="12.05.24 Möglicherweise gibt es eine Beschreibung, die jedoch nicht erforderlich ist." />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/30020467_XXL.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/30020467_XXL.webp"
+                                        data-source="../../img/Photo_gallery/30020467_XXL.webp"
+                                        alt="15.04.24 Es kann sein, dass hier viel Text steht (das Scrollen funktioniert)." />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/30020482_XXL.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/30020482_XXL.webp"
+                                        data-source="../../img/Photo_gallery/30020482_XXL.webp"
+                                        alt="12.05.24 photo-text" />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/30020494_XXL.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/30020494_XXL.webp"
+                                        data-source="../../img/Photo_gallery/30020494_XXL.webp"
+                                        alt="12.05.24 Beschreibung" />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/35046863_L.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/35046863_L.webp"
+                                        data-source="../../img/Photo_gallery/35046863_L.webp"
+                                        alt="14.05.24 Beschreibung" />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/IMG_4273.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/IMG_4273.webp"
+                                        data-source="../../img/Photo_gallery/IMG_4273.webp" alt="15.05.24" />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/Imkerfest2022.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/Imkerfest2022.webp"
+                                        data-source="../../img/Photo_gallery/Imkerfest2022.webp"
+                                        alt="12.05.24 Тут может быть какое то описание, но это не обязательно." />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/Imkerfest2022-2.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/Imkerfest2022-2.webp"
+                                        data-source="../../img/Photo_gallery/Imkerfest2022-2.webp" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                                            <nav class="list-pages">
                         <ul class="pages-ul">
                             <li class="arrow-li">
                                 <a href="#">&lt;</a>
@@ -232,13 +238,13 @@
         </div>
     </div>
 </section>
-<footer class="footer">
+    <footer class="footer">
     <div class="wrapper-container">
         <p>©2024 Alle Rechte vorbehalten</p>
     </div>
 </footer>
 
-<script src="js/file.min.js"></script>
+    <script type="module" src="js/file.min.js"></script>
 </body>
 
 </html>

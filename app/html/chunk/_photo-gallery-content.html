@@ -2,7 +2,7 @@
 <section class="section">
     <div class="wrapper-container">
         <div class="main">
-@@include("../html-parts/_nav-menu.html")
+            @@include("../html-parts/_nav-menu.html")
             <div class="main__content-block">
                 <!--  -->
                 <div class="bg-start-block">
@@ -28,60 +28,63 @@
                         </form>
                     </div>
                     <div class="gallery-wrapper">
-                        <div class="gallery">
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/30020467_XXL.webp" alt="foto"/>
-                                <span class="photo-date">15.04.24</span>
-                                <span class="photo-text">
-                                    Es kann sein, dass hier viel Text steht (das Scrollen funktioniert).
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Architecto laborum nostrum amet necessitatibus voluptatem, repudiandae magnam 
-                                    at labore doloribus inventore molestiae numquam autem minima tempora? 
-                                    Laboriosam corporis nam dolorem laborum?
-                                    End
-                                </span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/30020473_XXL.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text">
-                                    Möglicherweise gibt es eine Beschreibung, die jedoch nicht erforderlich ist.
-                                </span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/30020482_XXL.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text"></span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/30020494_XXL.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text">Beschreibung</span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/35046863_L.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text">Beschreibung</span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/IMG_4273.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text">Beschreibung</span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/Imkerfest2022.webp" alt="foto"/>
-                                <span class="photo-date">12.05.24</span>
-                                <span class="photo-text">
-                                    Тут может быть какое то описание, но это не обязательно.
-                                </span>
-                            </div>
-                            <div class="box">
-                                <img src="../../img/Photo_gallery/Imkerfest2022-2.webp" alt="foto"/>
-                                <span class="photo-date"></span>
-                                <span class="photo-text"></span>
-                            </div>
-                        </div>
-@@include("../html-parts/_pagination.html")
+                        <ul class="gallery">
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/30020473_XXL.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/30020473_XXL.webp"
+                                        data-source="../../img/Photo_gallery/30020473_XXL.webp"
+                                        alt="12.05.24 Möglicherweise gibt es eine Beschreibung, die jedoch nicht erforderlich ist." />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/30020467_XXL.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/30020467_XXL.webp"
+                                        data-source="../../img/Photo_gallery/30020467_XXL.webp"
+                                        alt="15.04.24 Es kann sein, dass hier viel Text steht (das Scrollen funktioniert)." />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/30020482_XXL.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/30020482_XXL.webp"
+                                        data-source="../../img/Photo_gallery/30020482_XXL.webp"
+                                        alt="12.05.24 photo-text" />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/30020494_XXL.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/30020494_XXL.webp"
+                                        data-source="../../img/Photo_gallery/30020494_XXL.webp"
+                                        alt="12.05.24 Beschreibung" />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/35046863_L.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/35046863_L.webp"
+                                        data-source="../../img/Photo_gallery/35046863_L.webp"
+                                        alt="14.05.24 Beschreibung" />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/IMG_4273.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/IMG_4273.webp"
+                                        data-source="../../img/Photo_gallery/IMG_4273.webp" alt="15.05.24" />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/Imkerfest2022.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/Imkerfest2022.webp"
+                                        data-source="../../img/Photo_gallery/Imkerfest2022.webp"
+                                        alt="12.05.24 Тут может быть какое то описание, но это не обязательно." />
+                                </a>
+                            </li>
+                            <li class="gallery-item">
+                                <a class="gallery-link" href="../../img/Photo_gallery/Imkerfest2022-2.webp">
+                                    <img class="gallery-image" src="../../img/Photo_gallery/Imkerfest2022-2.webp"
+                                        data-source="../../img/Photo_gallery/Imkerfest2022-2.webp" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                        @@include("../html-parts/_pagination.html")
                     </div>
                 </div>
             </div>

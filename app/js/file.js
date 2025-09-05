@@ -1,7 +1,7 @@
 // Gulp все файлы JS собирает в file.min.js
 
 // Вешаем общее событие на всю страничку.
-document.body.addEventListener("click", function(e) {
+document.body.addEventListener("click", function (e) {
     // Возвращает элемент по которому кликнули.
     const directСlick = e.target;
     // Возвращает родительский элемент.
@@ -21,12 +21,9 @@ document.body.addEventListener("click", function(e) {
         reassignButton();
     };
 
-    // Обрабатывает фото Галерею.
-    fotoGallery(item);
-
     // Работа с popup выпадающим меню.
     popup_run(directСlick);
-    
+
     // Обработка выпадения протоколов.
     if (directСlick.classList.contains("protocol-down")) {
         popup_protocol_down(e, directСlick);

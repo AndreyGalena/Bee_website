@@ -793,69 +793,35 @@ tbody {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  padding: 5px;
+  gap: 24px;
+  padding: 24px;
+  /* Увеличения блока при навидении */
 }
-.gallery-wrapper .gallery .box {
-  flex: 0 1 200px;
-  border: 2px solid gray;
-  box-shadow: 0px 0px 10px black;
-  border-radius: 5px;
+.gallery-wrapper .gallery .gallery-item {
+  flex: 1 1 260px;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.gallery-wrapper .gallery .gallery-item .gallery-link {
+  flex: 1 1 260px;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  /* обязательно для увеличения именно img а не блока */
   overflow: hidden;
-  overflow-y: auto;
-  cursor: pointer;
-  max-height: 250px;
-  margin: 5px;
-  transition: transform 2s ease;
-  background-color: #d6cccc;
-  overscroll-behavior: none;
+  border-radius: 10px;
 }
-.gallery-wrapper .gallery .box img {
-  width: 100%;
-  object-fit: contain;
-}
-@media (hover: hover) {
-  .gallery-wrapper .gallery .box img:hover {
-    transform: rotate(2deg) scale(1.1, 1.1);
-  }
-}
-@media (hover: none) {
-  .gallery-wrapper .gallery .box img:active {
-    transform: rotate(2deg) scale(1.1, 1.1);
-  }
-}
-.gallery-wrapper .gallery .box .photo-date {
-  font-size: 14px;
-  color: green;
-  padding: 2px;
-}
-.gallery-wrapper .gallery .box .photo-text {
-  font-size: 14px;
-}
-.gallery-wrapper .gallery .box::-webkit-scrollbar {
-  width: 2px;
-}
-.gallery-wrapper .gallery .box::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #00c6fb, #005bea);
-}
-.gallery-wrapper .gallery .box-active {
-  position: fixed;
-  top: 0%;
-  left: 0%;
+.gallery-wrapper .gallery .gallery-item .gallery-link .gallery-image {
   width: 100%;
   height: 100%;
-  z-index: 300;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
-.gallery-wrapper .gallery .box-active img {
-  width: 98%;
-  max-width: 800px;
-  cursor: pointer;
+.gallery-wrapper .gallery .gallery-item .gallery-link .gallery-image:hover {
+  transform: scale(1.3);
 }
-.gallery-wrapper .gallery .box-active .photo-date, .gallery-wrapper .gallery .box-active .photo-text {
-  display: none;
+.gallery-wrapper .gallery .gallery-item:hover {
+  transform: scale(1.04);
 }
 
 /* Multi-menu */
