@@ -1,5 +1,7 @@
 // Gulp все файлы JS собирает в file.min.js
 
+ghostEffectBlock();
+
 // Вешаем общее событие на всю страничку.
 document.body.addEventListener("click", function (e) {
     // Возвращает элемент по которому кликнули.
